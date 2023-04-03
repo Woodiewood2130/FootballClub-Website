@@ -88,9 +88,7 @@ links.forEach(link => {
     })
 })
 
-const buttonRight = document.getElementById('slideRight');
-const buttonLeft = document.getElementById('slideLeft');
-
+//left and right move for players items
 function right_players () {
     document.getElementById('items_flex_container_players').scrollLeft += 268;
   };
@@ -98,10 +96,10 @@ function right_players () {
     document.getElementById('items_flex_container_players').scrollLeft -= 268;
   };
 
-
+//left and right move for shop items
 function right_shop () {
-  document.getElementById('items_flex_container').scrollLeft += 268;
+  document.getElementById('items_flex_container_shop').scrollLeft += 268;
 };
 function left_shop () {
-  document.getElementById('items_flex_container').scrollLeft -= 268;
+  document.getElementById('items_flex_container_shop').scrollLeft -= 268;
 };
