@@ -1,0 +1,466 @@
+/* All Pages CSS */
+html,
+body {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.topnav {
+    /* background-color: #cecece; */
+    background-image:linear-gradient(to left,  rgb(9, 60, 125),rgb(36, 155, 209));
+    overflow: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-family:sans-serif;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: lightblue;
+}
+
+.topnav a.active {
+    background-color: lightblue;
+    color: black;
+}
+
+.nav-right {
+    float: right;
+}
+
+.show {
+    display: block;
+}
+
+/*index Page CSS */
+#head {
+    /* background-color: #1F7075;  */
+    /* background-image:linear-gradient(to bottom, rgb(30, 112, 117), rgb(32, 178, 170)); */
+    background-color: rgb(9, 60, 125);
+    width: 100%;
+    height: 55vh;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* margin-bottom: auto; */
+    overflow: hidden;
+}
+
+#flex_container_head1 {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-grow: 7; */
+    /* justify-content: center;  */
+    align-items: flex-start;
+    width: 77%;
+    height: 95%;
+    background-color: rgb(36, 155, 209);
+    /* flex-shrink: 0; */
+    /* margin-right: 10px; */
+    /* margin-bottom: 10px; */
+}
+
+#flex_container_head2 {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center;  */
+    /* margin-left: 0px; */
+    align-items: flex-end;
+    width: 20%;
+    height: 95%;
+    background-color: rgb(36, 155, 209);
+    /* overflow-y: scroll; */
+    
+}
+#flex_container_head2 .box {
+    background-color: white;
+    border: 1px solid rgb(9, 60, 125);
+    padding: 10px;
+    margin: 10px;
+    overflow-y: auto;
+    height: 75%;
+    max-height: fit-content;
+}
+
+.head_item {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.head_item a{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#head img {
+    height: 50%;
+    width: 60%;
+}
+
+#home-players {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 55vh;
+    background-color: rgb(32, 178, 170);
+    flex-direction: column;
+    background-color:  rgb(36, 155, 209);
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+}
+
+#home-players h1{
+    margin: 10px;
+    margin-bottom: -30px;
+    color: white;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+#flex_container_players {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    width: 90%;
+    height: 85%;
+    /* background-color: gray; */
+    margin-bottom: 30px;
+}
+
+#items_flex_container_players{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 48%;
+    height: 21rem;
+    margin: 0 auto;
+    overflow: hidden;
+    flex-shrink: 0;
+    scroll-behavior: smooth;  
+    /* background-color: darkgray;   */
+}
+
+.item_players {
+    position: inherit;
+    left: 0%;
+    top: 0%;
+    flex-shrink: 0;
+    width: 250px;
+    height: 380px;
+    margin: 10px;
+    /* background-color: white; */
+    
+}
+
+#flex_container_players  input {
+    /* align-self: flex-end; */
+    align-items: center;
+    margin: 210px;
+    /* background-color: white; */
+    /* margin: auto; */
+}
+
+
+#home-shop {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 55vh;
+    background-color: rgb(32, 178, 170);
+    flex-direction: column;
+    background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
+    justify-content: center;
+    align-items: center;
+}
+
+#home-shop h1{
+    margin: 10px;
+    margin-bottom: -30px;
+    color: white;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+#flex_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    width: 90%;
+    height: 85%;
+    /* background-color: gray; */
+    margin-bottom: 30px;
+}
+
+#items_flex_container{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 48%;
+    height: 21rem;
+    margin: 0 auto;
+    overflow: hidden;
+    flex-shrink: 0;
+    scroll-behavior: smooth;  
+    /* background-color: darkgray;   */
+}
+
+.item {
+    position: inherit;
+    left: 0%;
+    top: 0%;
+    flex-shrink: 0;
+    width: 250px;
+    height: 380px;
+    margin: 10px;
+    /* background-color: white; */
+    
+}
+
+#flex_container  input {
+    /* align-self: flex-end; */
+    align-items: center;
+    margin: 210px;
+    /* background-color: white; */
+    /* margin: auto; */
+}
+
+
+/* Products Page CSS */
+.beauty_care {
+    background-color: rgb(32, 178, 170);
+}
+
+.beauty_care h1 {
+    text-align: center;
+    color: white;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.medicine_treatment {
+    background-color: rgb(32, 178, 170);
+}
+
+.medicine_treatment h1{
+    text-align: center;
+    color: white;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.mom_baby {
+    background-color: rgb(32, 178, 170);
+}
+
+.mom_baby h1{
+    text-align: center;
+    color: white;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.flex_container_product_1  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(32, 178, 170); */
+    margin-bottom: 10px;
+}
+
+
+.flex_container_product_2  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(32, 178, 170); */
+    margin-bottom: 10px;
+}
+
+.flex_container_product_3  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(32, 178, 170);     */
+    margin-bottom: 10px;
+}
+
+.itemr1 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: center;
+    width: 75vw;
+    height: 20rem;
+    margin: 0 auto;
+    overflow: auto;
+    scroll-behavior: smooth;
+    
+}
+
+.itemr2 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 75vw;
+    height: 20rem;
+    margin: 0 auto;
+    overflow: auto;
+    scroll-behavior: smooth;
+    
+}
+
+.itemr3 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 75vw;
+    height: 20rem;
+    margin: 0 auto;
+    overflow: auto;
+    scroll-behavior: smooth;
+    
+}
+
+.counter_flex {
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+  
+.counter_flex .control {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 1 auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+  
+.counter_flex #display {
+    padding: 0;
+}
+  
+.counter_flex button {
+    min-width: 25px;
+    border-radius: 5px;
+    margin: 5px;
+}
+  
+
+/* @keyframes primary {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+  @keyframes secondary {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+} */
+
+
+/* #item4, #item5 {
+    align-self: flex-end;
+} */
+
+/* p .item-container{
+    flex-wrap: wrap;
+} */
+
+/* * { give me error for login popup
+    box-sizing: border-box;
+  } */
+
+/* @media screen and (max-width: 400px) {
+    .nav a {
+      float: none;
+      width: 100%;
+    }
+    .nav-right a {
+        float: none;
+        width: 100%;
+    }
+} */
+
+/* @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+ */
+
+
+
+
+/* .wrapper-center {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1160px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+} */

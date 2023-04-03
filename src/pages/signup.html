@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang ='en'>
+    <head>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="../styles/signup.css">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <!-- <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> -->
+        <title>Pharmacy|About-Us</title>
+        <nav>
+            <div class="topnav">
+                <a href="../../index.html">Home</a>
+                <a href="products.html">Products</a>            
+                <a href="about-us.html">About-Us</a>
+                <div class="nav-right">
+                    <a class="open-button" onclick="openForm()">Login</a>
+                    <div class="form-popup" id="loginform">
+                        <form action="form-data.txt" class="form-container">
+                            <header>Login</header>
+                            <input type="email" placeholder="Email" class="input" required>
+                            <input type="password" placeholder="Password" class="password" required>
+                            <div class="form-link">
+                                <a href="#" class="forgot-pass">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn">Login</button>
+                            <div class="form-link">
+                                <span>Don't have an account? <a href="src/pages/signup.html" class="link signup-link">Signup</a></span>
+                            </div>
+                            <!-- <button type="button" class="cancel" onclick="closeForm()">Close</button> -->
+                        </form>
+                </div> 
+                    <a class="active" href="./signup.html">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </head>
+    <body>
+        <section>
+        <div class="form signup" >
+            <div class="form-content">
+                <header>Signup</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create password" class="password">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm password" class="password">
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Signup</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account? <a href="" onclick="openForm()" class="link login-link">Login</a></span>
+                </div>
+            </div>
+
+            <!-- <div class="line"></div> -->
+
+            <!-- <div class="media-options">
+                <a href="#" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
+
+            <div class="media-options">
+                <a href="#" class="field google">
+                    <img src="../images/google.png" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
+            </div> -->
+        </div>
+        </section>
+
+        
+        <script src="../scripts/scripts.js"></script>
+    </body>
+
+    <footer>
+
+    </footer>
+ 
+</html>
+    
