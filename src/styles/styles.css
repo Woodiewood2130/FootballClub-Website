@@ -192,7 +192,7 @@ body {
     background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
 #home_shop h1{
@@ -222,11 +222,12 @@ body {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    width: 48%;
+    width: 80%;
     height: 21rem;
     margin: 0 auto;
     overflow: hidden;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
+    flex-grow: 0;
     scroll-behavior: smooth;  
     /* background-color: darkgray;   */
 }
@@ -235,18 +236,20 @@ body {
     position: inherit;
     left: 0%;
     top: 0%;
-    flex-shrink: 0;
-    width: 250px;
-    height: 380px;
+    width: 330px;
+    height: 310px;
     margin: 10px;
+    padding-right: -40px;
+    /* padding-left: 40px; */
+    /* background-color: gray; */
+    /* flex-shrink: 0; */
     /* background-color: white; */
-    
 }
 
 #flex_container_shop  input {
     /* align-self: flex-end; */
     align-items: center;
-    margin: 210px;
+    /* margin: 210px; */
     /* background-color: white; */
     /* margin: auto; */
 }
@@ -261,6 +264,14 @@ body {
     background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
     justify-content: center;
     align-items: center;
+}
+
+#home_footer h1{
+    margin: 10px;
+    margin-bottom: -30px;
+    color: white;
+    margin: 20px;
+    margin-top: 10px;
 }
 
 
