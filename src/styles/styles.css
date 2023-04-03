@@ -54,8 +54,8 @@ body {
     align-items: center;
     flex-direction: row;
     /* flex-wrap: wrap; */
-    /* margin-bottom: auto; */
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 #flex_container_head1 {
@@ -111,7 +111,7 @@ body {
     width: 60%;
 }
 
-#home-players {
+#home_players {
     display: flex;
     background-color: white;
     width: 100%;
@@ -125,7 +125,7 @@ body {
     margin-bottom: 10px;
 }
 
-#home-players h1{
+#home_players h1{
     margin: 10px;
     margin-bottom: -30px;
     color: white;
@@ -182,7 +182,7 @@ body {
 }
 
 
-#home-shop {
+#home_shop {
     display: flex;
     background-color: white;
     width: 100%;
@@ -192,9 +192,10 @@ body {
     background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
-#home-shop h1{
+#home_shop h1{
     margin: 10px;
     margin-bottom: -30px;
     color: white;
@@ -202,7 +203,7 @@ body {
     margin-top: 10px;
 }
 
-#flex_container {
+#flex_container_shop {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -214,7 +215,7 @@ body {
     margin-bottom: 30px;
 }
 
-#items_flex_container{
+#items_flex_container_shop {
     display: flex;
     position: relative;
     flex-direction: row;
@@ -230,7 +231,7 @@ body {
     /* background-color: darkgray;   */
 }
 
-.item {
+.item_shop {
     position: inherit;
     left: 0%;
     top: 0%;
@@ -242,12 +243,24 @@ body {
     
 }
 
-#flex_container  input {
+#flex_container_shop  input {
     /* align-self: flex-end; */
     align-items: center;
     margin: 210px;
     /* background-color: white; */
     /* margin: auto; */
+}
+
+#home_footer {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 55vh;
+    background-color: rgb(32, 178, 170);
+    flex-direction: column;
+    background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
+    justify-content: center;
+    align-items: center;
 }
 
 
