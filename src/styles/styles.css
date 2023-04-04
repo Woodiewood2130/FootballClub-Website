@@ -1,8 +1,16 @@
 /* All Pages CSS */
 html,
 body {
-    background-color: white;
+    /* background-color: gray; */
+    background-image: url(napoli_banner_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    margin: 10px;
 }
 
 .topnav {
@@ -10,8 +18,11 @@ body {
     background-image:linear-gradient(to left,  rgb(9, 60, 125),rgb(36, 155, 209));
     overflow: auto;
     border-radius: 4px;
-    margin-bottom: 10px;
     font-family:sans-serif;
+    position:static;
+    margin: 10px;
+    margin-bottom: 20px;
+    /* scroll-behavior: smooth; */
 }
 
 .topnav a {
@@ -45,17 +56,19 @@ body {
 /*index Page CSS */
 #head {
     /* background-color: #1F7075;  */
-    /* background-image:linear-gradient(to bottom, rgb(30, 112, 117), rgb(32, 178, 170)); */
-    background-color: rgb(9, 60, 125);
+    background-image:linear-gradient(to bottom,  rgb(9, 60, 125),rgb(36, 155, 209));
+    /* background-color: rgb(9, 60, 125); */
     width: 100%;
-    height: 55vh;
+    height: 45vh;
     display: flex; 
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     /* flex-wrap: wrap; */
     overflow: hidden;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    /* margin: 20px; */
 }
 
 #flex_container_head1 {
@@ -65,8 +78,9 @@ body {
     /* justify-content: center;  */
     align-items: flex-start;
     width: 77%;
-    height: 95%;
-    background-color: rgb(36, 155, 209);
+    height: 93%;
+    /* background-color: rgb(36, 155, 209); */
+    background-image:linear-gradient(to right,  rgb(9, 60, 125),rgb(36, 155, 209));
     /* flex-shrink: 0; */
     /* margin-right: 10px; */
     /* margin-bottom: 10px; */
@@ -77,10 +91,11 @@ body {
     /* flex-direction: row; */
     /* justify-content: center;  */
     /* margin-left: 0px; */
-    align-items: flex-end;
+    align-items: center;
     width: 20%;
-    height: 95%;
-    background-color: rgb(36, 155, 209);
+    height: 93%;
+    /* background-color: rgb(36, 155, 209); */
+    background-image:linear-gradient(to left,  rgb(9, 60, 125),rgb(36, 155, 209));
     /* overflow-y: scroll; */
     
 }
@@ -89,9 +104,16 @@ body {
     border: 1px solid rgb(9, 60, 125);
     padding: 10px;
     margin: 10px;
-    overflow-y: auto;
-    height: 75%;
-    max-height: fit-content;
+    overflow-y: scroll;
+    height: 30vh;
+    /* max-height: fit-content; */
+}
+
+.box ul {
+    height: inherit;
+    /* margin-bottom: -50px; */
+    /* overflow-y: auto; */
+
 }
 
 .head_item {
@@ -113,16 +135,15 @@ body {
 
 #home_players {
     display: flex;
-    background-color: white;
     width: 100%;
-    height: 55vh;
-    background-color: rgb(32, 178, 170);
+    height: 45vh;
     flex-direction: column;
     background-color:  rgb(36, 155, 209);
     justify-content: center;
     align-items: center;
     /* margin-top: 10px; */
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
 #home_players h1{
@@ -138,7 +159,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-content: flex-start;
+    /* align-content: flex-start; */
     width: 90%;
     height: 85%;
     /* background-color: gray; */
@@ -176,23 +197,27 @@ body {
 #flex_container_players  input {
     /* align-self: flex-end; */
     align-items: center;
-    margin: 210px;
+    margin: 0px;
     /* background-color: white; */
     /* margin: auto; */
 }
 
+/*Players.html and all the other player css below */
+
+
+
+/* All player styles end*/
 
 #home_shop {
     display: flex;
-    background-color: white;
     width: 100%;
     height: 55vh;
-    background-color: rgb(32, 178, 170);
     flex-direction: column;
-    background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
+    background-color:  rgb(36, 155, 209);
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
+    opacity: 0.9;
 }
 
 #home_shop h1{
@@ -238,7 +263,7 @@ body {
     top: 0%;
     width: 330px;
     height: 310px;
-    margin: 10px;
+    margin: 20px;
     padding-right: -40px;
     /* padding-left: 40px; */
     /* background-color: gray; */
@@ -264,6 +289,8 @@ body {
     background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
 #home_footer h1{
@@ -274,7 +301,7 @@ body {
     margin-top: 10px;
 }
 
-
+/* TO BE REMOVED PART BELOW HERE  */
 /* Products Page CSS */
 .beauty_care {
     background-color: rgb(32, 178, 170);

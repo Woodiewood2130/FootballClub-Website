@@ -98,7 +98,7 @@ function right_players () {
 
 //left and right move for shop items
 function right_shop () {
-  document.getElementById('items_flex_container_shop').scrollLeft += 268;
+  document.getElementById('items_flex_container_shop').scrollLeft += 287;
 };
 function left_shop () {
   document.getElementById('items_flex_container_shop').scrollLeft -= 268;
