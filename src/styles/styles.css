@@ -67,7 +67,7 @@ main {
     /* flex-wrap: wrap; */
     overflow: hidden;
     margin-bottom: 20px;
-    opacity: 0.9;
+    opacity: 0.98;
     /* margin: 20px; */
 }
 
@@ -136,14 +136,14 @@ main {
 #home_players {
     display: flex;
     width: 100%;
-    height: 45vh;
+    height: 55vh;
     flex-direction: column;
     background-color:  rgb(36, 155, 209);
     justify-content: center;
     align-items: center;
     /* margin-top: 10px; */
     margin-bottom: 20px;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 #home_players h1{
@@ -156,14 +156,15 @@ main {
 
 #flex_container_players {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* align-content: flex-start; */
+    align-content: center;
     width: 90%;
-    height: 85%;
+    height: 70%;
     /* background-color: gray; */
-    margin-bottom: 30px;
+    
 }
 
 #items_flex_container_players{
@@ -172,13 +173,14 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
-    width: 48%;
-    height: 21rem;
-    margin: 0 auto;
+    /* align-content: center; */
+    width: 50%;
+    /* height: 19rem; */
+    margin: 0% auto;
     overflow: hidden;
     flex-shrink: 0;
-    scroll-behavior: smooth;  
+    scroll-behavior: smooth; 
+    padding-right: 20px;
     /* background-color: darkgray;   */
 }
 
@@ -187,9 +189,9 @@ main {
     left: 0%;
     top: 0%;
     flex-shrink: 0;
-    width: 250px;
-    height: 380px;
-    margin: 10px;
+    width: 17%;
+    height: 60%;
+    margin: 34px;
     /* background-color: white; */
     
 }
@@ -204,6 +206,61 @@ main {
 
 /*Players.html and all the other player css below */
 
+#player_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(36, 155, 209);
+    border-radius: 5px;
+    /* justify-content: space-between; */
+    opacity: 0.95;
+    
+}
+
+#player_info h2{
+    margin: 10px;
+}
+
+#personal_info {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    align-self:flex-start;
+    border-radius: 4px;
+    width: 24%;
+    height: 87vh;
+    margin: 15px;
+    margin-right: 5px;
+    min-width: 0;
+}
+
+#personal_info p{
+    margin: 10px;
+}
+
+#statistics {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    background-color: gray;
+    border-radius: 4px;
+    /* align-items: center; */
+    width: 86%;
+    height: 87vh;
+    overflow-y: scroll;
+    margin:15px;
+    margin-left: 5px;
+}
+
+#statistics p{
+    margin: 10px;
+}
+
 
 
 /* All player styles end*/
@@ -217,7 +274,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px; 
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 #home_shop h1{
@@ -261,8 +318,8 @@ main {
     position: inherit;
     left: 0%;
     top: 0%;
-    width: 330px;
-    height: 310px;
+    width: 100%;
+    height: 92%;
     margin: 20px;
     padding-right: -40px;
     /* padding-left: 40px; */
@@ -290,7 +347,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    opacity: 0.9;
+    opacity: 0.98;
 }
 
 #home_footer h1{
