@@ -2,14 +2,17 @@
 html,
 body {
     /* background-color: gray; */
-    background-image: url(napoli_banner_1.png);
+    background-image: url(background1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-position: 50% 0; */
     background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 main {
+    
     margin: 10px;
 }
 
@@ -22,6 +25,7 @@ main {
     position:static;
     margin: 10px;
     margin-bottom: 20px;
+    opacity: 0.9;
     /* scroll-behavior: smooth; */
 }
 
@@ -67,7 +71,7 @@ main {
     /* flex-wrap: wrap; */
     overflow: hidden;
     margin-bottom: 20px;
-    opacity: 0.98;
+    opacity: 0.9;
     /* margin: 20px; */
 }
 
@@ -87,34 +91,81 @@ main {
 }
 
 #flex_container_head2 {
-    /* display: flex; */
-    /* flex-direction: row; */
+    display: flex;
+    flex-direction: column;
     /* justify-content: center;  */
     /* margin-left: 0px; */
+    position: relative;
     align-items: center;
     width: 20%;
     height: 93%;
+    overflow-y: hidden;
     /* background-color: rgb(36, 155, 209); */
     background-image:linear-gradient(to left,  rgb(9, 60, 125),rgb(36, 155, 209));
-    /* overflow-y: scroll; */
     
 }
-#flex_container_head2 .box {
-    background-color: white;
-    border: 1px solid rgb(9, 60, 125);
+
+#flex_container_head2 .box1 {
+    /* background-color: white; */
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    border: 2px solid black;
     padding: 10px;
     margin: 10px;
     overflow-y: scroll;
-    height: 30vh;
+    width: 85%;
+    /* height: 30vh; */
+    height: 100%;
+    overflow-y: hidden;
+    background-color: white;
     /* max-height: fit-content; */
 }
 
-.box ul {
-    height: inherit;
-    /* margin-bottom: -50px; */
-    /* overflow-y: auto; */
-
+#flex_container_head2 h3 {
+    color: white;
 }
+
+.box1 ul {
+    height: inherit;
+    position: relative;
+    margin-bottom: 1px;
+    
+}
+
+.box1 .primary {
+    width: inherit;
+    height: inherit;
+    /* left: 0%; */
+    top: 0%;
+    bottom: 0%;
+    position: absolute;
+    animation: primary 12s linear infinite;
+    margin: 0;
+    width:90%;
+    height: 20%;
+    color: black;
+    /* margin-bottom: 20px; */
+}
+
+@keyframes primary {
+    from {
+        top: 0%;
+    }
+    to {
+        top: -100%;
+    }
+}
+/* 
+@keyframes secondary {
+    from {
+        top: 100%;
+    }
+    to {
+        top: 0%;
+    }
+} */
+
 
 .head_item {
     display: flex;
@@ -143,7 +194,7 @@ main {
     align-items: center;
     /* margin-top: 10px; */
     margin-bottom: 20px;
-    opacity: 0.95;
+    opacity: 0.90;
 }
 
 #home_players h1{
@@ -204,7 +255,7 @@ main {
     /* margin: auto; */
 }
 
-/*Players.html and all the other player css below */
+/* All the other player css below */
 
 #player_info {
     display: flex;
@@ -215,7 +266,7 @@ main {
     background-color:  rgb(36, 155, 209);
     border-radius: 5px;
     /* justify-content: space-between; */
-    opacity: 0.95;
+    opacity: 0.9;
     
 }
 
@@ -255,6 +306,7 @@ main {
     overflow-y: scroll;
     margin:15px;
     margin-left: 5px;
+    color: white;
 }
 
 #statistics p{
@@ -262,8 +314,7 @@ main {
 }
 
 
-
-/* All player styles end*/
+/* All players styles end*/
 
 #home_shop {
     display: flex;
@@ -274,7 +325,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px; 
-    opacity: 0.95;
+    opacity: 0.9;
 }
 
 #home_shop h1{
@@ -347,7 +398,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    opacity: 0.98;
+    opacity: 0.9;
 }
 
 #home_footer h1{
@@ -358,158 +409,7 @@ main {
     margin-top: 10px;
 }
 
-/* TO BE REMOVED PART BELOW HERE  */
-/* Products Page CSS */
-.beauty_care {
-    background-color: rgb(32, 178, 170);
-}
 
-.beauty_care h1 {
-    text-align: center;
-    color: white;
-    margin: 20px;
-    margin-top: 10px;
-}
-
-.medicine_treatment {
-    background-color: rgb(32, 178, 170);
-}
-
-.medicine_treatment h1{
-    text-align: center;
-    color: white;
-    margin: 20px;
-    margin-top: 10px;
-}
-
-.mom_baby {
-    background-color: rgb(32, 178, 170);
-}
-
-.mom_baby h1{
-    text-align: center;
-    color: white;
-    margin: 20px;
-    margin-top: 10px;
-}
-
-.flex_container_product_1  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: flex-start;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgb(32, 178, 170); */
-    margin-bottom: 10px;
-}
-
-
-.flex_container_product_2  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: flex-start;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgb(32, 178, 170); */
-    margin-bottom: 10px;
-}
-
-.flex_container_product_3  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: flex-start;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgb(32, 178, 170);     */
-    margin-bottom: 10px;
-}
-
-.itemr1 {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    align-content: center;
-    width: 75vw;
-    height: 20rem;
-    margin: 0 auto;
-    overflow: auto;
-    scroll-behavior: smooth;
-    
-}
-
-.itemr2 {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    width: 75vw;
-    height: 20rem;
-    margin: 0 auto;
-    overflow: auto;
-    scroll-behavior: smooth;
-    
-}
-
-.itemr3 {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    width: 75vw;
-    height: 20rem;
-    margin: 0 auto;
-    overflow: auto;
-    scroll-behavior: smooth;
-    
-}
-
-.counter_flex {
-    margin-top: 10px;
-    border: 2px solid white;
-    border-radius: 6px;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-  
-.counter_flex .control {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin: 1 auto;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
-  
-.counter_flex #display {
-    padding: 0;
-}
-  
-.counter_flex button {
-    min-width: 25px;
-    border-radius: 5px;
-    margin: 5px;
-}
   
 
 /* @keyframes primary {
