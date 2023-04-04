@@ -1,10 +1,11 @@
 /* All Pages CSS */
 html,
 body {
-    background-color: gray;
-    /* background-image: url(background.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat; */
+    /* background-color: gray; */
+    background-image: url(napoli_banner_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -66,6 +67,7 @@ main {
     /* flex-wrap: wrap; */
     overflow: hidden;
     margin-bottom: 20px;
+    opacity: 0.9;
     /* margin: 20px; */
 }
 
@@ -141,6 +143,7 @@ main {
     align-items: center;
     /* margin-top: 10px; */
     margin-bottom: 20px;
+    opacity: 0.9;
 }
 
 #home_players h1{
@@ -214,6 +217,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px; 
+    opacity: 0.9;
 }
 
 #home_shop h1{
@@ -286,6 +290,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    opacity: 0.9;
 }
 
 #home_footer h1{
