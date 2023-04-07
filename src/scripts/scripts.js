@@ -45,18 +45,18 @@ function openForm() {
 //   }
 
 //counter for the products
-const display1 = document.getElementById("display1");
+const display = document.getElementById("display");
 
 function counter_add() {
     document.getElementById("plus");
-    const number1 = display1.innerText;
-    display1.innerText = parseInt(number1, 10) + 1;
+    const number = display.innerText;
+    display.innerText = parseInt(number, 10) + 1;
 }
 
 function counter_minus() {
     document.getElementById("minus");
-    const number1 = display1.innerText;
-    display1.innerText = parseInt(number1, 10) - 1;  
+    const number = display.innerText;
+    display.innerText = parseInt(number, 10) - 1;  
 }
 
 
