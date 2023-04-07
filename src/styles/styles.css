@@ -112,6 +112,7 @@ main {
     width: 20%;
     height: 93%;
     overflow-y: hidden;
+    overflow-x: hidden;
     border-radius: 3px;
     /* background-color: rgb(36, 155, 209); */
     background-image:linear-gradient(to left,  rgb(9, 60, 125),rgb(36, 155, 209));
@@ -155,12 +156,21 @@ main {
     top: 0%;
     bottom: 0%;
     position: absolute;
-    animation: primary 12s linear infinite;
     margin: 0;
     width:90%;
     height: 20%;
     color: black;
+    animation: primary 12s linear infinite;
+    
     /* margin-bottom: 20px; */
+}
+
+#pause:hover{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state: paused;
+    cursor: pointer;
 }
 
 @keyframes primary {
@@ -169,15 +179,6 @@ main {
     }
     to {
         top: -100%;
-    }
-}
-
-@keyframes players {
-    from {
-        left: 0%;
-    }
-    to {
-        left: -100%;
     }
 }
 
@@ -209,7 +210,7 @@ main {
     align-items: center;
     /* margin-top: 10px; */
     margin-bottom: 20px;
-    opacity: 0.90;
+    opacity: 0.98;
     border-radius: 3px;
 }
 
@@ -265,12 +266,12 @@ main {
     justify-content: space-between;
     align-items: center;
     /* align-content: center; */
-    width: 50%;
+    width: 48%;
     /* height: 19rem; */
     margin: 0% auto;
     overflow: hidden;
     flex-shrink: 0;
-    /* scroll-behavior: smooth;  */
+    scroll-behavior: smooth; 
     padding-right: 20px;
     
     /* background-color: darkgray;   */
@@ -281,12 +282,18 @@ main {
     left: 0%;
     top: 0%;
     flex-shrink: 0;
-    width: 17%;
+    /* width: 17%; */
+    /* width: inherit; */
     height: 60%;
-    margin: 34px;
+    /* margin: 34px;  */
     animation: players 11s linear infinite;
     /* background-color: white; */
     
+}
+
+.item_players a{
+    margin-right: 50px;
+    text-decoration: none;
 }
 
 @keyframes players {
@@ -297,6 +304,14 @@ main {
         left: -100%;
     }
 } 
+
+#pause_player:hover{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state: paused;
+    cursor: pointer;
+}
 
 #flex_container_players  input {
     /* align-self: flex-end; */
@@ -378,7 +393,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px; 
-    opacity: 0.9;
+    opacity: 0.95;
     border-radius: 3px;
 }
 
