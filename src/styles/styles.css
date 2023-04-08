@@ -107,7 +107,7 @@ main {
     flex-direction: column;
     /* justify-content: center;  */
     /* margin-left: 0px; */
-    position: relative;
+    /* position: relative; */
     align-items: center;
     width: 20%;
     height: 93%;
@@ -321,69 +321,6 @@ main {
     /* margin: auto; */
 }
 
-/* All the other player css below */
-
-#player_info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color:  rgb(36, 155, 209);
-    border-radius: 5px;
-    /* justify-content: space-between; */
-    opacity: 0.9;
-    border-radius: 3px;
-    
-}
-
-#player_info h2{
-    margin: 10px;
-}
-
-#personal_info {
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    align-self:flex-start;
-    border-radius: 4px;
-    width: 24%;
-    height: 87vh;
-    margin: 15px;
-    margin-right: 5px;
-    min-width: 0;
-    border-radius: 3px;
-}
-
-#personal_info p{
-    margin: 10px;
-}
-
-#statistics {
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    background-color: gray;
-    border-radius: 4px;
-    /* align-items: center; */
-    width: 86%;
-    height: 87vh;
-    overflow-y: auto;
-    margin:15px;
-    margin-left: 5px;
-    color: white;
-    border-radius: 3px;
-}
-
-#statistics p{
-    margin: 10px;
-}
-
-/* All players styles end*/
-
 #home_shop {
     display: flex;
     width: 100%;
@@ -457,32 +394,97 @@ main {
     /* margin: auto; */
 }
 
+footer{
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
 #home_footer {
     display: flex;
     background-color: white;
     width: 100%;
-    height: 55vh;
+    height: 40vh;
     flex-direction: column;
     background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     opacity: 0.9;
     border-radius: 3px;
 }
 
 #home_footer h1{
-    margin: 10px;
-    margin-bottom: -30px;
     color: white;
     margin: 20px;
     margin-top: 10px;
+    margin-bottom: -30px;
 }
 
-/* Each product page for shop*/
-.details{
+/* All the other player css below */
+
+#player_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(36, 155, 209);
+    border-radius: 5px;
+    /* justify-content: space-between; */
+    opacity: 0.9;
+    border-radius: 3px;
+    
+}
+
+#player_info h2{
+    margin: 10px;
+}
+
+#personal_info {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    background-color: white;
     justify-content: center;
-    align-self: center;
+    align-items: center;
+    align-self:flex-start;
+    border-radius: 4px;
+    width: 24%;
+    height: 87vh;
+    margin: 15px;
+    margin-right: 5px;
+    min-width: 0;
+    border-radius: 3px;
+}
+
+#personal_info p{
+    margin: 10px;
+}
+
+#statistics {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    background-color: gray;
+    border-radius: 4px;
+    /* align-items: center; */
+    width: 86%;
+    height: 87vh;
+    overflow-y: auto;
+    margin:15px;
+    margin-left: 5px;
+    color: white;
+    border-radius: 3px;
+}
+
+#statistics p{
+    margin: 10px;
+}
+
+/* All players styles end*/
+
+/*shop page css */
+.shop{
     /* background-color: lightblue;  */
     background-image:linear-gradient(to bottom,  rgb(9, 60, 125),rgb(36, 155, 209));
     /* background-color: rgb(9, 60, 125); */
@@ -496,13 +498,30 @@ main {
     margin-bottom: 20px;
     opacity: 0.97;
     border-radius: 3px;
+}
+
+/* Each product page for shop*/
+.details{
+    /* background-color: lightblue;  */
+    background-image:linear-gradient(to bottom,  rgb(9, 60, 125),rgb(36, 155, 209));
+    /* background-color: rgb(9, 60, 125); */
+    width: 100%;
+    height: 90vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 20px;
+    opacity: 0.97;
+    border-radius: 3px;
 
 }
 
 .details .flex_product {
     display: flex;
-    width: 50%;
-    height: 73%;
+    width: 60%;
+    height: 93%;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -515,10 +534,11 @@ main {
 
 .details .flex_product_1 {
     display: flex; 
-    width: 40%;
-    height: 53%;
+    width: 50%;
+    height: 63%;
     flex-direction: column;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    border: 1px solid grey;
     justify-content: center;
     align-items: center;
     color: white;
@@ -529,34 +549,38 @@ main {
 
 .details .flex_product_2 {
     display: flex; 
-    width: 35%;
-    height: 47%;
+    width: 45%;
+    height: 58%;
     flex-direction: column;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
+    background-color: rgb(36, 155, 209);
     color: black;
     justify-content: center;
     align-items: center;
     margin: 20px;
+    font-size: 22px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .details .flex_product_3 {
     display: flex; 
-    height: 30%;
+    height: 40%;
     flex-direction: column;
     /* background-color: lightslategray; */
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 5px;
+    font-size: 17px;
 }
 
 .details .flex_product_4 {
     display: flex; 
-    flex-direction: row;
+    flex-direction: column;
     /* background-color: lightslategray; */
     justify-content: center;
     padding: 10px;
     margin: 5px;
+    font-size: 17px;
 }
 
 .details .flex_product_5 {
@@ -614,6 +638,7 @@ main {
   
 .counter_flex #display {
     padding: 5px;
+    font-size: 17px;
 }
   
 .counter_flex button {
