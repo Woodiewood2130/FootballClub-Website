@@ -1,4 +1,6 @@
 /* All Pages CSS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html,
 body {
     /* background-color: gray; */
@@ -7,7 +9,7 @@ body {
     background-size: cover;
     /* background-position: 50% 0; */
     background-attachment: fixed;
-    font-family: 'roboto', sans-serif ;
+    font-family: 'Open Sans', sans-serif ;
     
 }
 
@@ -23,7 +25,7 @@ main {
     font-family:sans-serif;
     position:static;
     margin: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     opacity: 0.95;
     /* scroll-behavior: smooth; */
 }
@@ -32,7 +34,7 @@ main {
     float: left;
     display: block;
     height: max-content;
-    /* color: white; */
+    /* color: whitesmoke; */
     /* text-align: center; */
     /* padding: 14px 16px; */
     /* text-decoration: none; */
@@ -42,7 +44,7 @@ main {
 .topnav a {
     float: left;
     display: block;
-    color: white;
+    color: whitesmoke;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -120,7 +122,6 @@ main {
 }
 
 #flex_container_head2 .box1 {
-    /* background-color: white; */
     display:flex;
     flex-direction: column;
     position: relative;
@@ -139,7 +140,7 @@ main {
 }
 
 #flex_container_head2 h3 {
-    color: white;
+    color: whitesmoke;
 }
 
 .box1 ul {
@@ -217,7 +218,7 @@ main {
 #home_players h1{
     margin: 10px;
     margin-bottom: -30px;
-    color: white;
+    color: whitesmoke;
     margin: 20px;
     margin-top: 10px;
 }
@@ -324,7 +325,7 @@ main {
 #home_shop {
     display: flex;
     width: 100%;
-    height: 55vh;
+    height: 70vh;
     flex-direction: column;
     background-color:  rgb(36, 155, 209);
     justify-content: center;
@@ -337,7 +338,7 @@ main {
 #home_shop h1{
     margin: 10px;
     margin-bottom: -30px;
-    color: white;
+    color: whitesmoke;
     margin: 20px;
     margin-top: 10px;
 }
@@ -345,24 +346,24 @@ main {
 #flex_container_shop {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     align-content: flex-start;
     width: 90%;
-    height: 85%;
+    height: 70%;
     /* background-color: gray; */
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #items_flex_container_shop {
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
     width: 80%;
-    height: 21rem;
+    height: 28rem;
     margin: 0 auto;
     overflow: hidden;
     /* flex-shrink: 0; */
@@ -377,11 +378,13 @@ main {
     left: 0%;
     top: 0%;
     width: 100%;
-    height: 92%;
+    height: 95%;
     margin: 20px;
     padding-right: -40px;
     /* padding-left: 40px; */
     /* background-color: gray; */
+    text-align: center;
+    color: whitesmoke;
     /* flex-shrink: 0; */
     /* background-color: white; */
 }
@@ -394,12 +397,8 @@ main {
     /* margin: auto; */
 }
 
-footer{
-    margin: 10px;
-    margin-bottom: 20px;
-}
 
-#home_footer {
+#home_about_us {
     display: flex;
     background-color: white;
     width: 100%;
@@ -409,16 +408,37 @@ footer{
     justify-content: center;
     align-items: center;
     /* margin-bottom: 20px; */
-    opacity: 0.9;
+    opacity: 0.95;
     border-radius: 3px;
 }
 
-#home_footer h1{
-    color: white;
+#home_about_us h1{
+    color: whitesmoke;
     margin: 20px;
-    margin-top: 10px;
-    margin-bottom: -30px;
+    /* margin-top: 10px; */
+    /* margin-bottom: -30px; */
 }
+
+footer {
+    display: flex;
+    background-image:linear-gradient(to top, rgb(36, 155, 209), rgb(9, 60, 125));
+    width: 99%;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.98;
+    border-radius: 3px;
+    margin-top: 10px;
+    text-align: center;
+    margin: 10px;  
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+footer a{
+    color: whitesmoke;
+}
+
 
 /* All the other player css below */
 
@@ -473,7 +493,7 @@ footer{
     overflow-y: auto;
     margin:15px;
     margin-left: 5px;
-    color: white;
+    color: whitesmoke;
     border-radius: 3px;
 }
 
@@ -483,22 +503,10 @@ footer{
 
 /* All players styles end*/
 
-/*shop page css */
-.shop{
-    /* background-color: lightblue;  */
-    background-image:linear-gradient(to bottom,  rgb(9, 60, 125),rgb(36, 155, 209));
-    /* background-color: rgb(9, 60, 125); */
-    width: 100%;
-    height: 90vh;
-    display: flex; 
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    overflow: hidden;
-    margin-bottom: 20px;
-    opacity: 0.97;
-    border-radius: 3px;
-}
+/* Ticket page css start */
+
+
+/* Ticket page css end */
 
 /* Each product page for shop*/
 .details{
@@ -526,7 +534,7 @@ footer{
     justify-content: flex-start;
     align-items: center;
     background-color: white;
-    color: white;
+    color: whitesmoke;
     margin: 20px;
     margin-right: 0px;
 
@@ -541,7 +549,7 @@ footer{
     border: 1px solid grey;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: whitesmoke;
     margin: 20px;
     margin-right: 0px;
     
@@ -554,7 +562,7 @@ footer{
     flex-direction: column;
     /* background-color: lightgrey; */
     background-color: rgb(36, 155, 209);
-    color: black;
+    color: whitesmoke;
     justify-content: center;
     align-items: center;
     margin: 20px;
@@ -614,7 +622,7 @@ footer{
 }
 
 .counter_flex {
-    border: 2px solid white;
+    border: 2px solid whitesmoke;
     border-radius: 6px;
     padding: 0;
     display: flex;
@@ -646,7 +654,124 @@ footer{
     border-radius: 5px;
     margin: 5px;
 }
-  
+
+/*shop page css */
+.shop{
+    /* background-color: lightblue;  */
+    background-image:linear-gradient(to bottom,  rgb(9, 60, 125),rgb(36, 155, 209));
+    /* background-color: rgb(9, 60, 125); */
+    width: 100%;
+    height: 83.4vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 15px;
+    opacity: 0.97;
+    border-radius: 3px;
+}
+
+.shop_container1 {
+    width: 20%;
+    height: 80vh;
+    background-color: lightgray;
+    margin-right: 10px;
+    /* margin: 10px; */
+    /* margin-left: 5px; */
+    overflow-y: hidden;
+}
+
+.shop_container1 li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    /* text-align:center; */
+}
+
+.shop_container1 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.shop_container2 {
+    width: 77%;
+    height: 80vh;
+    background-color: lightgray;
+    /* margin: 2px; */
+    overflow-y: auto;
+    text-align: center;
+}
+
+.items_shop {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: darkgrey; */
+    width: 260px;
+    margin: 8px;
+    margin-right: 25px;
+    /* margin: 5px; */
+}
+
+#shop_row_1 {
+    display: flex;
+    width: 97%;
+    height: 37vh;
+    margin: 20px;
+    background-color: grey;
+    margin-bottom: -5px;
+    justify-content: space-evenly;
+    align-items: center;
+    color:white;
+}
+
+.shop_container2 s {
+    color: yellow;
+}
+
+#shop_row_2 {
+    display: flex;
+    width: 97%;
+    height: 40vh;
+    margin: 20px;
+    background-color: gray;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-bottom: -5px; */
+}
+
+#shop_row_3 {
+    display: flex;
+    width: 97%;
+    height: 40vh;
+    margin: 20px;
+    background-color: gray;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#shop_row_4 {
+    display: flex;
+    width: 97%;
+    height: 40vh;
+    margin: 20px;
+    background-color: gray;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#shop_row_5 {
+    display: flex;
+    width: 97%;
+    height: 40vh;
+    margin: 20px;
+    background-color: gray;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
 
 
 
@@ -681,11 +806,11 @@ footer{
 .four-0-four-msg{
     text-align: center;
     text-transform: capitalize;
-    color: white;
+    color: whitesmoke;
 }
 
 .four-0-four-msg a{
-    color: white;
+    color: whitesmoke;
 }
 
 .four-0-four-msg a:hover{
