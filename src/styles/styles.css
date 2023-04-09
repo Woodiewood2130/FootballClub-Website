@@ -362,7 +362,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     align-content: center;
-    width: 80%;
+    width: 69vw;
     height: 28rem;
     margin: 0 auto;
     overflow: hidden;
@@ -386,7 +386,11 @@ main {
     text-align: center;
     color: whitesmoke;
     /* flex-shrink: 0; */
-    /* background-color: white; */
+}
+
+.item_shop a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #flex_container_shop  input {
@@ -422,7 +426,7 @@ main {
 footer {
     display: flex;
     background-image:linear-gradient(to top, rgb(36, 155, 209), rgb(9, 60, 125));
-    width: 99%;
+    width: auto;
     height: 6vh;
     justify-content: center;
     align-items: center;
@@ -439,6 +443,25 @@ footer a{
     color: whitesmoke;
 }
 
+/*Players page css start */
+#players {
+    /* background-color: lightblue;  */
+    background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
+    /* background-color: rgb(9, 60, 125); */
+    width: 100%;
+    height: 82.5vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 20px;
+    opacity: 0.97;
+    border-radius: 3px;
+}
+
+/*Players page css end */
+
 
 /* All the other player css below */
 
@@ -446,13 +469,15 @@ footer a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100%;
+    height: 83.2vh;
     width: 100%;
     background-color:  rgb(36, 155, 209);
     border-radius: 5px;
     /* justify-content: space-between; */
     opacity: 0.9;
     border-radius: 3px;
+    margin-bottom: 13px;
+    overflow: hidden;
     
 }
 
@@ -470,7 +495,7 @@ footer a{
     align-self:flex-start;
     border-radius: 4px;
     width: 24%;
-    height: 87vh;
+    height: 80vh;
     margin: 15px;
     margin-right: 5px;
     min-width: 0;
@@ -489,7 +514,7 @@ footer a{
     border-radius: 4px;
     /* align-items: center; */
     width: 86%;
-    height: 87vh;
+    height: 80vh;
     overflow-y: auto;
     margin:15px;
     margin-left: 5px;
@@ -504,9 +529,163 @@ footer a{
 /* All players styles end*/
 
 /* Ticket page css start */
-
+#tickets {
+    /* background-color: lightblue;  */
+    background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
+    /* background-color: rgb(9, 60, 125); */
+    width: 100%;
+    height: 82.5vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 15px;
+    opacity: 0.97;
+    border-radius: 3px;
+}
 
 /* Ticket page css end */
+
+
+/*shop page css */
+.shop{
+    /* background-color: lightblue;  */
+    background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
+    /* background-color: rgb(9, 60, 125); */
+    width: 100%;
+    height: 83vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 15px;
+    opacity: 0.97;
+    border-radius: 3px;
+}
+
+.shop_container1 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 80vh;
+    background-color: lightgray;
+    justify-content: flex-start;
+    margin-right: 10px;
+    /* margin: 10px; */
+    /* margin-left: 5px; */
+    overflow-y: hidden;
+
+}
+
+.shop_container1 li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    /* text-align:center; */
+}
+
+.shop_container1 a{
+    list-style-type: circle;
+    text-decoration: none;
+    color: black;
+}
+
+
+.shop_container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 77%;
+    height: 80vh;
+    background-color: lightgray;
+    /* margin: 2px; */
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+    text-align: center;
+    color: whitesmoke;
+}
+
+.shop_container2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.shop_container2 h2 {
+    margin: 10px;
+    color: black;
+}
+
+.items_shop {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* background-color: darkgrey; */
+    width: 260px;
+    margin: 8px;
+    margin-right: 25px;
+    margin-top: auto;
+    /* margin: 5px; */
+}
+
+#shop_row_1 {
+    display: flex;
+    width: 97%;
+    height: 37vh;
+    margin: 12px;
+    background-color: grey;
+    /* margin-bottom: -5px; */
+    justify-content: space-evenly;
+    align-items: center;
+    /* color:white; */
+}
+
+.shop_container2 s {
+    color: yellow;
+}
+
+#shop_row_2 {
+    display: flex;
+    width: 97%;
+    height: 43vh;
+    margin: 12px;
+    background-color: gray;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-bottom: -5px; */
+}
+
+#shop_row_3 {
+    display: flex;
+    width: 97%;
+    height: 43vh;
+    margin: 12px;
+    background-color: gray;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#shop_row_4 {
+    display: flex;
+    width: 97%;
+    height: 42vh;
+    margin: 12px;
+    background-color: gray;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#shop_row_5 {
+    display: flex;
+    width: 97%;
+    height: 42vh;
+    margin: 12px;
+    background-color: gray;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* shop page css end*/
 
 /* Each product page for shop*/
 .details{
@@ -514,7 +693,7 @@ footer a{
     background-image:linear-gradient(to bottom,  rgb(9, 60, 125),rgb(36, 155, 209));
     /* background-color: rgb(9, 60, 125); */
     width: 100%;
-    height: 90vh;
+    height: 82.5vh;
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -528,7 +707,7 @@ footer a{
 
 .details .flex_product {
     display: flex;
-    width: 60%;
+    width: 80vw;
     height: 93%;
     flex-direction: row;
     justify-content: flex-start;
@@ -536,7 +715,7 @@ footer a{
     background-color: white;
     color: whitesmoke;
     margin: 20px;
-    margin-right: 0px;
+    
 
 }
 
@@ -654,124 +833,7 @@ footer a{
     border-radius: 5px;
     margin: 5px;
 }
-
-/*shop page css */
-.shop{
-    /* background-color: lightblue;  */
-    background-image:linear-gradient(to bottom,  rgb(9, 60, 125),rgb(36, 155, 209));
-    /* background-color: rgb(9, 60, 125); */
-    width: 100%;
-    height: 83.4vh;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    overflow: hidden;
-    margin-bottom: 15px;
-    opacity: 0.97;
-    border-radius: 3px;
-}
-
-.shop_container1 {
-    width: 20%;
-    height: 80vh;
-    background-color: lightgray;
-    margin-right: 10px;
-    /* margin: 10px; */
-    /* margin-left: 5px; */
-    overflow-y: hidden;
-}
-
-.shop_container1 li {
-    font-size: 20px;
-    margin-bottom: 20px;
-    /* text-align:center; */
-}
-
-.shop_container1 a{
-    text-decoration: none;
-    color: black;
-}
-
-
-.shop_container2 {
-    width: 77%;
-    height: 80vh;
-    background-color: lightgray;
-    /* margin: 2px; */
-    overflow-y: auto;
-    text-align: center;
-}
-
-.items_shop {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    /* background-color: darkgrey; */
-    width: 260px;
-    margin: 8px;
-    margin-right: 25px;
-    /* margin: 5px; */
-}
-
-#shop_row_1 {
-    display: flex;
-    width: 97%;
-    height: 37vh;
-    margin: 20px;
-    background-color: grey;
-    margin-bottom: -5px;
-    justify-content: space-evenly;
-    align-items: center;
-    color:white;
-}
-
-.shop_container2 s {
-    color: yellow;
-}
-
-#shop_row_2 {
-    display: flex;
-    width: 97%;
-    height: 40vh;
-    margin: 20px;
-    background-color: gray;
-    justify-content: space-evenly;
-    align-items: center;
-    /* margin-bottom: -5px; */
-}
-
-#shop_row_3 {
-    display: flex;
-    width: 97%;
-    height: 40vh;
-    margin: 20px;
-    background-color: gray;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#shop_row_4 {
-    display: flex;
-    width: 97%;
-    height: 40vh;
-    margin: 20px;
-    background-color: gray;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#shop_row_5 {
-    display: flex;
-    width: 97%;
-    height: 40vh;
-    margin: 20px;
-    background-color: gray;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-
+/*each product page css end*/
 
 
 
