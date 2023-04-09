@@ -89,16 +89,16 @@ links.forEach(link => {
 })
 
 //left and right move for players items
-function right_players () {
-    document.getElementById('items_flex_container_players').scrollLeft += 210;
-  };
-  function left_players () {
-    document.getElementById('items_flex_container_players').scrollLeft -= 210;
-  };
+// function right_players () {
+//     document.getElementById('items_flex_container_players').scrollLeft += 210;
+//   };
+//   function left_players () {
+//     document.getElementById('items_flex_container_players').scrollLeft -= 210;
+//   };
 
 //left and right move for shop items
 function right_shop () {
-  document.getElementById('items_flex_container_shop').scrollLeft += 287;
+  document.getElementById('items_flex_container_shop').scrollLeft += 335;
 };
 function left_shop () {
   document.getElementById('items_flex_container_shop').scrollLeft -= 268;
