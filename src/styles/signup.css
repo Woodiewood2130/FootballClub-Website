@@ -1,26 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 html,
 body {
-    background-image: url(background1.png);
+    background-image: url(napoli_banner_9.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: 50% 0; */
     background-attachment: fixed;
-    font-family: 'Courier New', Courier, monospace;
+    background-position: center;
+    font-family: 'Courier New','Open Sans',sans-serif,Courier, monospace;
+    padding: 0;
+    margin: 0;
 }
 
 .topnav {
     /* background-color: #cecece; */
-    background-image:linear-gradient(to left,  rgb(9, 60, 125),rgb(36, 155, 209));
+    background-image:linear-gradient(to left,  rgb(41, 57, 81),rgb(45, 152, 209));
     overflow: auto;
-    border-radius: 4px;
-    position:static;
-    margin: 10px;
-    margin-bottom: 20px;
-    opacity: 1;
+    /* border-radius: 4px; */
     font-family:sans-serif;
-    opacity: 0.95;
+    position:static;
+    margin: 3px;
+    margin-bottom: 4px;
+    border-radius: 3px;
+    /* margin-bottom: 10px; */
+    /* opacity: 0.95; */
+    /* scroll-behavior: smooth; */
+}
+
+.topnav .logo {
+    float: left;
+    display: block;
+    height: max-content;
+    margin: 0;
+    /* color: whitesmoke; */
+    /* text-align: center; */
+    /* padding: 14px 16px; */
+    /* text-decoration: none; */
+    /* font-size: 17px; */
 }
 
 .topnav a {
@@ -46,6 +64,13 @@ body {
     float: right;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87.3vh;
+}
+
 header{
     font-size: 28px;
     font-weight: 500;
@@ -59,7 +84,7 @@ header{
     cursor: pointer;
     position: absolute;
     padding: 14px 16px;
-    right: 110px;
+    right: 95px;
 }
 
 .form-popup {
@@ -137,7 +162,7 @@ header{
     cursor: pointer;
     width: 100%;
     margin: 5px 0 10px 0;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -171,7 +196,7 @@ header{
     flex-direction: row;
     overflow: hidden;
     /* margin-bottom: 20px; */
-    opacity: 0.98;
+    /* opacity: 0.98; */
     margin: 10px;
     border-radius: 3px;
 }
@@ -299,6 +324,28 @@ header{
 .form-content a:hover{
     text-decoration: underline;
 }
+
+footer {
+    display: flex;
+    background-image:linear-gradient(to bottom, rgb(45, 152, 209), rgb(41, 57, 81));
+    width: auto;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.98;
+    border-radius: 3px;
+    /* margin-top: 10px; */
+    text-align: center;
+    margin: 3px;  
+    margin-bottom: 5px;
+    color: whitesmoke;
+    font-family: 'Open sans';
+}
+
+footer a{
+    color: whitesmoke;
+}
+
 
 /* .line{
     position: relative;
