@@ -89,7 +89,20 @@ main {
 }
 
 #home {
-    
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    height: 86.5vh;
+    width: 100%;
+    /* background-color:  rgb(45, 152, 209); */
+    border-radius: 5px;
+    /* justify-content: space-between; */
+    /* opacity: 0.9; */
+    /* border: 1px solid white; */
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    /* border-radius: 3px; */
+    overflow: auto;
 }
 
 /*index Page CSS */
@@ -97,18 +110,20 @@ main {
     /* background-color: #1F7075;  */
     /* background-image:linear-gradient(to bottom,  rgb(41, 57, 81),rgb(45, 152, 209)); */
     /* background-color: rgb(9, 60, 125); */
-    width: 100%;
+    width: 99.8%;
     height: 52vh;
     display: flex; 
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     /* flex-wrap: wrap; */
-    overflow: hidden;
+    overflow: auto;
     margin-bottom: 3px;
     opacity: 0.9;
     border-radius: 3px;
     border: 1px solid white;
+    margin-top: 9px;
+    min-height: 52vh;
     /* margin: 20px; */
 }
 
@@ -260,7 +275,7 @@ main {
 
 #home_players {
     display: flex;
-    width: 100%;
+    width: 99.8%;
     height: 55vh;
     flex-direction: column;
     /* background-color:  rgb(45, 152, 209); */
@@ -271,6 +286,7 @@ main {
     opacity: 0.9;
     border-radius: 3px;
     border: 1px solid white;
+    min-height: 55vh;
 }
 
 #home_players h1{
@@ -401,7 +417,7 @@ main {
 
 #home_shop {
     display: flex;
-    width: 100%;
+    width: 99.8%;
     height: 70vh;
     flex-direction: column;
     /* background-color:  rgb(45, 152, 209); */
@@ -411,6 +427,7 @@ main {
     opacity: 0.9;
     border-radius: 3px;
     border: 1px solid white;
+    min-height: 70vh;
 }
 
 #home_shop h1{
@@ -491,7 +508,7 @@ main {
 #home_about_us {
     display: flex;
     /* background-color: white; */
-    width: 100%;
+    width: 99.8%;
     height: 40vh;
     flex-direction: column;
     background-image:linear-gradient(to bottom, rgb(45, 152, 209), rgb(41, 57, 81));
@@ -501,6 +518,8 @@ main {
     opacity: 0.98;
     border-radius: 3px;
     border: 1px solid white;
+    min-height: 40vh;
+    margin-bottom: 9px;
 }
 
 #home_about_us h1{
