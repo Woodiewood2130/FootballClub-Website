@@ -327,6 +327,12 @@ main {
 
 .item_players a{
     text-decoration: none;
+    color: whitesmoke;
+}
+
+.item_players a:hover{
+    text-decoration: underline;
+    
 }
 
 #items {
@@ -413,9 +419,9 @@ main {
 #flex_container_shop {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    align-content: flex-start;
+    /* align-content: flex-start; */
     width: 90%;
     height: 70%;
     border-radius: 3px;
@@ -446,9 +452,10 @@ main {
     position: inherit;
     left: 0%;
     top: 0%;
-    width: 100%;
+    width: 30%;
     height: 95%;
     margin: 20px;
+    margin-right: 20px;
     padding-right: -40px;
     /* padding-left: 40px; */
     /* background-color: gray; */
@@ -459,6 +466,11 @@ main {
 
 .item_shop a {
     text-decoration: none;
+    color: inherit;
+}
+
+.item_shop a:hover {
+    text-decoration: underline;
     color: inherit;
 }
 
@@ -660,6 +672,10 @@ footer a{
     width: 60%;
 }
 
+.shop_container1 a:hover {
+    color: whitesmoke;
+}
+
 .shop_container1 li {
     font-size: 20px;
     margin-bottom: 20px;
@@ -691,6 +707,9 @@ footer a{
     color: inherit;
 }
 
+.shop_container2 a:hover{
+    text-decoration: underline;
+}
 
 .shop_container2 h2 {
     margin: 10px;
@@ -1038,8 +1057,16 @@ footer a{
     height: 20%;
     color: black;
     animation: news 20s linear infinite;
-    
     /* margin-bottom: 20px; */
+}
+
+.box2 a {
+    color: rgb(45, 152, 209);
+    /* text-decoration: none; */
+}
+
+.box2 a:hover {
+    color: blue;
 }
 
 @keyframes news {
