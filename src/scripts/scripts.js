@@ -101,5 +101,5 @@ function right_shop () {
   document.getElementById('items_flex_container_shop').scrollLeft += 335;
 };
 function left_shop () {
-  document.getElementById('items_flex_container_shop').scrollLeft -= 268;
+  document.getElementById('items_flex_container_shop').scrollLeft -= 335;
 };

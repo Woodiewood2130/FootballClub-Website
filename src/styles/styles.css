@@ -4,29 +4,45 @@
 html,
 body {
     /* background-color: gray; */
-    background-image: url(background1.png);
+    background-image: url(napoli_banner_9.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: 50% 0; */
     background-attachment: fixed;
+    background-position: center; 
     font-family: 'Open Sans', sans-serif ;
-    
+    margin: 0;
+    padding: 0;
 }
 
 main {
-    margin: 10px;
+    margin: 3px;
 }
+
+/* #header-full {
+    display: block;
+    height: 220px;
+    margin-bottom: 0px;
+    background-image:url(napoli.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    background-color: rgb(45, 152, 209);
+} */
 
 .topnav {
     /* background-color: #cecece; */
-    background-image:linear-gradient(to left,  rgb(9, 60, 125),rgb(36, 155, 209));
+    background-image:linear-gradient(to left,  rgb(41, 57, 81),rgb(45, 152, 209));
     overflow: auto;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     font-family:sans-serif;
     position:static;
-    margin: 10px;
-    margin-bottom: 10px;
-    opacity: 0.95;
+    margin: 3px;
+    margin-bottom: 4px;
+    border-radius: 3px;
+    /* margin-bottom: 10px; */
+    opacity: 0.98;
     /* scroll-behavior: smooth; */
 }
 
@@ -34,6 +50,7 @@ main {
     float: left;
     display: block;
     height: max-content;
+    margin: 0;
     /* color: whitesmoke; */
     /* text-align: center; */
     /* padding: 14px 16px; */
@@ -72,37 +89,70 @@ main {
 /*index Page CSS */
 #head {
     /* background-color: #1F7075;  */
-    background-image:linear-gradient(to bottom,  rgb(9, 60, 125),rgb(36, 155, 209));
+    background-image:linear-gradient(to bottom,  rgb(41, 57, 81),rgb(45, 152, 209));
     /* background-color: rgb(9, 60, 125); */
     width: 100%;
-    height: 45vh;
+    height: 52vh;
     display: flex; 
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     /* flex-wrap: wrap; */
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
     opacity: 0.9;
     border-radius: 3px;
     /* margin: 20px; */
 }
 
 #flex_container_head1 {
-    /* display: flex; */
-    /* flex-direction: row; */
+    display: flex;
+    flex-direction: column;
     /* flex-grow: 7; */
-    /* justify-content: center;  */
-    align-items: flex-start;
+    justify-content: center; 
+    align-items: center;
     width: 77%;
     height: 93%;
     border-radius: 3px;
     /* background-color: rgb(36, 155, 209); */
-    background-image:linear-gradient(to right,  rgb(255, 255, 255),rgb(36, 155, 209));
+    background-image:linear-gradient(to top,  rgb(209, 216, 220),rgb(45, 152, 209));
     /* flex-shrink: 0; */
     /* margin-right: 10px; */
     /* margin-bottom: 10px; */
 }
+
+#flex_container_head1 h2 {
+    color: rgb(41, 57, 81);
+}
+
+#flex_container_news1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    width: 98%;
+    height: 40%;
+    background-color: rgb(27, 140, 201);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+#flex_container_news2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    width: 98%;
+    height: 40%;
+    border-radius: 3px;
+    background-color: rgb(27, 140, 201);
+    margin-bottom: 10px;
+}
+
+/* #head img {
+    height: 100%;
+    width: 100%;
+} */
 
 #flex_container_head2 {
     display: flex;
@@ -117,7 +167,7 @@ main {
     overflow-x: hidden;
     border-radius: 3px;
     /* background-color: rgb(36, 155, 209); */
-    background-image:linear-gradient(to left,  rgb(9, 60, 125),rgb(36, 155, 209));
+    background-image:linear-gradient(to top,  rgb(41, 57, 81),rgb(45, 152, 209));
     
 }
 
@@ -140,7 +190,7 @@ main {
 }
 
 #flex_container_head2 h3 {
-    color: whitesmoke;
+    color: rgb(41, 57, 81);
 }
 
 .box1 ul {
@@ -196,22 +246,18 @@ main {
     align-items: center;
 }
 
-#head img {
-    height: 50%;
-    width: 60%;
-}
 
 #home_players {
     display: flex;
     width: 100%;
     height: 55vh;
     flex-direction: column;
-    background-color:  rgb(36, 155, 209);
+    background-color:  rgb(45, 152, 209);
     justify-content: center;
     align-items: center;
     /* margin-top: 10px; */
-    margin-bottom: 20px;
-    opacity: 0.98;
+    margin-bottom: 3px;
+    opacity: 0.9;
     border-radius: 3px;
 }
 
@@ -236,30 +282,6 @@ main {
     
 }
 
-/* #items_flex_container_players{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    margin: 0% auto;
-    overflow: hidden;
-    flex-shrink: 0;
-    scroll-behavior: smooth; 
-    padding-right: 20px;
-}
-
-.item_players {
-    position: inherit;
-    left: 0%;
-    top: 0%;
-    flex-shrink: 0;
-    width: 17%;
-    height: 60%;
-    margin: 34px;
-} */
-
 #items_flex_container_players{
     display: flex;
     position: relative;
@@ -267,34 +289,45 @@ main {
     justify-content: space-between;
     align-items: center;
     /* align-content: center; */
-    width: 48%;
-    /* height: 19rem; */
+    width: 43vw;
+    height: 40vh;
     margin: 0% auto;
     overflow: hidden;
     flex-shrink: 0;
     scroll-behavior: smooth; 
-    padding-right: 20px;
-    
+    padding-right: 35px;
     /* background-color: darkgray;   */
 }
 
 .item_players {
+    display: flex;
+    flex-direction: row;
     position: inherit;
     left: 0%;
     top: 0%;
     flex-shrink: 0;
     /* width: 17%; */
     /* width: inherit; */
-    height: 60%;
-    /* margin: 34px;  */
+    height: 30vh;
+    margin: 5px; 
+    /* overflow: auto; */
     animation: players 11s linear infinite;
     /* background-color: white; */
     
 }
 
 .item_players a{
-    margin-right: 50px;
     text-decoration: none;
+}
+
+#items {
+    height: 90%;
+    margin-right: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
+    /* background-color: lightgrey; */
+    text-align: center;
+    color: whitesmoke;
 }
 
 @keyframes players {
@@ -322,16 +355,40 @@ main {
     /* margin: auto; */
 }
 
+/* #items_flex_container_players{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0% auto;
+    overflow: hidden;
+    flex-shrink: 0;
+    scroll-behavior: smooth; 
+    padding-right: 20px;
+}
+
+.item_players {
+    position: inherit;
+    left: 0%;
+    top: 0%;
+    flex-shrink: 0;
+    width: 17%;
+    height: 60%;
+    margin: 34px;
+} */
+
 #home_shop {
     display: flex;
     width: 100%;
     height: 70vh;
     flex-direction: column;
-    background-color:  rgb(36, 155, 209);
+    background-color:  rgb(45, 152, 209);
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px; 
-    opacity: 0.95;
+    margin-bottom: 3px;
+    opacity: 0.9;
     border-radius: 3px;
 }
 
@@ -408,11 +465,11 @@ main {
     width: 100%;
     height: 40vh;
     flex-direction: column;
-    background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
+    background-image:linear-gradient(to bottom, rgb(45, 152, 209), rgb(41, 57, 81));
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 20px; */
-    opacity: 0.95;
+    margin-bottom: 3px;
+    opacity: 0.98;
     border-radius: 3px;
 }
 
@@ -425,17 +482,17 @@ main {
 
 footer {
     display: flex;
-    background-image:linear-gradient(to top, rgb(36, 155, 209), rgb(9, 60, 125));
+    background-image:linear-gradient(to bottom, rgb(45, 152, 209), rgb(41, 57, 81));
     width: auto;
     height: 6vh;
     justify-content: center;
     align-items: center;
     opacity: 0.98;
     border-radius: 3px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     text-align: center;
-    margin: 10px;  
-    margin-bottom: 20px;
+    margin: 3px;  
+    margin-bottom: 5px;
     color: whitesmoke;
 }
 
@@ -446,16 +503,16 @@ footer a{
 /*Players page css start */
 #players {
     /* background-color: lightblue;  */
-    background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
+    background-image:linear-gradient(to bottom, rgb(45, 152, 209), rgb(41, 57, 81));
     /* background-color: rgb(9, 60, 125); */
     width: 100%;
-    height: 82.5vh;
+    height: 87.3vh;
     display: flex; 
     justify-content: center;
     align-items: center;
     flex-direction: row;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
     opacity: 0.97;
     border-radius: 3px;
 }
@@ -469,16 +526,14 @@ footer a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 83.2vh;
+    height: 87vh;
     width: 100%;
-    background-color:  rgb(36, 155, 209);
+    background-color:  rgb(45, 152, 209);
     border-radius: 5px;
     /* justify-content: space-between; */
     opacity: 0.9;
-    border-radius: 3px;
-    margin-bottom: 13px;
+    /* border-radius: 3px; */
     overflow: hidden;
-    
 }
 
 #player_info h2{
@@ -492,14 +547,13 @@ footer a{
     background-color: white;
     justify-content: center;
     align-items: center;
-    align-self:flex-start;
+    /* align-self:flex-start; */
     border-radius: 4px;
     width: 24%;
-    height: 80vh;
+    height: 83vh;
     margin: 15px;
     margin-right: 5px;
     min-width: 0;
-    border-radius: 3px;
 }
 
 #personal_info p{
@@ -514,12 +568,11 @@ footer a{
     border-radius: 4px;
     /* align-items: center; */
     width: 86%;
-    height: 80vh;
+    height: 83vh;
     overflow-y: auto;
     margin:15px;
     margin-left: 5px;
     color: whitesmoke;
-    border-radius: 3px;
 }
 
 #statistics p{
@@ -531,16 +584,16 @@ footer a{
 /* Ticket page css start */
 #tickets {
     /* background-color: lightblue;  */
-    background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
+    background-image:linear-gradient(to bottom, rgb(45, 152, 209), rgb(41, 57, 81));
     /* background-color: rgb(9, 60, 125); */
     width: 100%;
-    height: 82.5vh;
+    height: 87.3vh;
     display: flex; 
     justify-content: center;
     align-items: center;
     flex-direction: row;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 3px;
     opacity: 0.97;
     border-radius: 3px;
 }
@@ -551,17 +604,16 @@ footer a{
 /*shop page css */
 .shop{
     /* background-color: lightblue;  */
-    background-image:linear-gradient(to bottom, rgb(36, 155, 209), rgb(9, 60, 125));
+    background-image:linear-gradient(to bottom, rgb(45, 152, 209), rgb(41, 57, 81));
     /* background-color: rgb(9, 60, 125); */
     width: 100%;
-    height: 83vh;
+    height: 87.3vh;
     display: flex; 
     justify-content: center;
     align-items: center;
     flex-direction: row;
     overflow: hidden;
-    margin-bottom: 15px;
-    opacity: 0.97;
+    opacity: 0.95 ;
     border-radius: 3px;
 }
 
@@ -569,37 +621,40 @@ footer a{
     display: flex;
     flex-direction: column;
     width: 20%;
-    height: 80vh;
+    height: 82vh;
     background-color: lightgray;
     justify-content: flex-start;
     margin-right: 10px;
+    border-radius: 3px;
     /* margin: 10px; */
     /* margin-left: 5px; */
     overflow-y: hidden;
 
 }
 
-.shop_container1 li {
-    font-size: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    /* text-align:center; */
-}
-
 .shop_container1 a{
     list-style-type: circle;
     text-decoration: none;
     color: black;
+    width: 55%;
 }
 
+.shop_container1 li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 10vw;
+    /* text-align:center; */
+}
 
 .shop_container2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 77%;
-    height: 80vh;
+    height: 82vh;
     background-color: lightgray;
+    border-radius: 3px;
     /* margin: 2px; */
     overflow-y: auto;
     /* overflow-x: hidden; */
@@ -690,16 +745,16 @@ footer a{
 /* Each product page for shop*/
 .details{
     /* background-color: lightblue;  */
-    background-image:linear-gradient(to bottom,  rgb(9, 60, 125),rgb(36, 155, 209));
+    background-image:linear-gradient(to bottom,  rgb(41, 57, 81),rgb(45, 152, 209));
     /* background-color: rgb(9, 60, 125); */
     width: 100%;
-    height: 82.5vh;
+    height: 87.3vh;
     display: flex; 
     justify-content: center;
     align-items: center;
     flex-direction: row;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
     opacity: 0.97;
     border-radius: 3px;
 
@@ -715,8 +770,6 @@ footer a{
     background-color: white;
     color: whitesmoke;
     margin: 20px;
-    
-
 }
 
 .details .flex_product_1 {
@@ -740,7 +793,7 @@ footer a{
     height: 58%;
     flex-direction: column;
     /* background-color: lightgrey; */
-    background-color: rgb(36, 155, 209);
+    background-color: rgb(45, 152, 209);
     color: whitesmoke;
     justify-content: center;
     align-items: center;
@@ -835,6 +888,126 @@ footer a{
 }
 /*each product page css end*/
 
+/* News page css begin */
+#news {
+    /* background-color: lightblue;  */
+    background-image:linear-gradient(to bottom, rgb(45, 152, 209), rgb(41, 57, 81));
+    /* background-color: rgb(9, 60, 125); */
+    width: 100%;
+    height: 87.3vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    opacity: 0.95 ;
+    border-radius: 3px;
+}
+
+#news_flex1 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 82vh;
+    background-color: lightgray;
+    justify-content: flex-start;
+    margin-right: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 3px;
+    /* margin: 10px; */
+    /* margin-left: 5px; */
+}
+
+#news_flex1 h3 {
+    color: rgb(41, 57, 81);
+}
+
+#news_flex2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    height: 82vh;
+    background-color: gray;
+    /* margin: 2px; */
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+    text-align: center;
+    color: whitesmoke;
+}
+
+#news_flex3 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 82vh;
+    background-color: lightgray;
+    justify-content: flex-start;
+    margin-left: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 3px;
+    /* margin: 10px; */
+    /* margin-left: 5px; */
+
+}
+
+#news_flex3 .box2 {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    overflow-y: scroll;
+    width: 85%;
+    /* height: 30vh; */
+    height: 100%;
+    overflow-y: hidden;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    /* max-height: fit-content; */
+}
+
+#news_flex3 h3 {
+    color: rgb(41, 57, 81);
+}
+
+.box2 ul {
+    height: inherit;
+    position: relative;
+    margin-bottom: 1px;
+    
+}
+
+.box2 .primary {
+    width: inherit;
+    height: inherit;
+    /* left: 0%; */
+    top: 0%;
+    bottom: 0%;
+    position: absolute;
+    margin: 0;
+    width:90%;
+    height: 20%;
+    color: black;
+    animation: news 20s linear infinite;
+    
+    /* margin-bottom: 20px; */
+}
+
+@keyframes news {
+    from {
+        top: 0%;
+    }
+    to {
+        top: -100%;
+    }
+}
+
+/*news page css ends*/
 
 
 /* Error 404 page*/
@@ -847,7 +1020,7 @@ footer a{
     justify-content: center;
     align-self: center;
     /* background-color: #1F7075;  */
-    background-image:linear-gradient(to bottom,  rgb(9, 60, 125),rgb(36, 155, 209));
+    background-image:linear-gradient(to bottom,  rgb(41, 57, 81),rgb(45, 152, 209));
     /* background-color: rgb(9, 60, 125); */
     width: 100%;
     height: 90vh;
