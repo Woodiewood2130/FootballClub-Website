@@ -16,7 +16,8 @@ body {
 
 .topnav {
     /* background-color: #cecece; */
-    background-image:linear-gradient(to left,  rgb(41, 57, 81),rgb(45, 152, 209));
+    /* background-image:linear-gradient(to left,  rgb(41, 57, 81),rgb(45, 152, 209)); */
+    border: 1px solid white;
     overflow: auto;
     /* border-radius: 4px; */
     font-family:sans-serif;
@@ -57,7 +58,7 @@ body {
 
 .topnav a.active {
     background-color: lightblue;
-    color: black;
+    color: rgb(41, 57, 81);
 }
 
 .nav-right {
@@ -68,7 +69,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 87.3vh;
+    height: 86.5vh;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: 3px
 }
 
 header{
@@ -188,7 +192,7 @@ header{
     /* background-color: lightblue;  */
     /* background-image:linear-gradient(to bottom,  rgb(9, 60, 125),rgb(36, 155, 209)); */
     /* background-color: rgb(9, 60, 125); */
-    width: 40%;
+    width: 30vw;
     height: 70vh;
     display: flex; 
     justify-content: center;
@@ -227,7 +231,7 @@ header{
 
 .form.signup{
     margin: 20px;
-    height: 50vh;
+    height: 48vh;
     display: flex;
     justify-content: center;
     opacity: 1;
@@ -327,7 +331,8 @@ header{
 
 footer {
     display: flex;
-    background-image:linear-gradient(to bottom, rgb(45, 152, 209), rgb(41, 57, 81));
+    /* background-image:linear-gradient(to bottom, rgb(45, 152, 209), rgb(41, 57, 81)); */
+    border: 1px solid white;
     width: auto;
     height: 6vh;
     justify-content: center;
