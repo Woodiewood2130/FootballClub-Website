@@ -57,7 +57,7 @@ body {
 
 .topnav a.active {
     background-color: lightblue;
-    color: black;
+    color: rgb(41, 57, 81);
 }
 
 .nav-right {
