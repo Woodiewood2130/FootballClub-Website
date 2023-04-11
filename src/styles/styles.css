@@ -293,6 +293,7 @@ main {
     color: whitesmoke;
     margin: 10px;
     margin-top: 10px;
+
 }
 
 #home_players h2{
@@ -375,7 +376,7 @@ main {
     margin: 5px; 
     /* overflow: auto; */
     animation: players1 35s linear infinite;
-    /* background-color: white; */ 
+    /* background-color: white;  */
 }
 
 
@@ -565,23 +566,24 @@ main {
 
 footer {
     display: flex;
-    background-image:linear-gradient(to top,  rgb(209, 216, 220),rgb(45, 152, 209));
+    background-image:linear-gradient(to bottom,  rgb(41, 57, 81),rgb(45, 152, 209));
     width: auto;
     height: 6vh;
+    width: 99.4;
     justify-content: center;
     align-items: center;
-    opacity: 0.95;
+    opacity: 0.9;
     border-radius: 3px;
     /* margin-top: 10px; */
     text-align: center;
     margin: 3px;  
     margin-bottom: 5px;
     border: 1px solid white;
-    color: rgb(41, 57, 81);
+    color: whitesmoke;
 }
 
 footer a{
-    color: whitesmoke;
+    color: rgb(41, 57, 81);
 }
 
 /*Players page css start */
@@ -596,7 +598,7 @@ footer a{
     background-position: center; 
     opacity: 0.9;
     width: 100%;
-    height: 86vh;
+    height: 86.5vh;
     /* display: flex; 
     justify-content: center;
     align-items: center;
@@ -755,6 +757,7 @@ footer a{
 
 #personal_info img {
     margin-bottom: 20px;
+
 }
 
 #personal_info p{
