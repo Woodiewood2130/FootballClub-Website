@@ -4,6 +4,12 @@ function openForm() {
     document.getElementById("loginform").classList.toggle("show");
 }
 
+function login_redirect() {
+
+}
+
+
+//Funtion for the ticket
 function renderTicket() {
     var selected = document.getElementById("ticket_group");
     var imgUrl = "";
@@ -35,25 +41,6 @@ function reset_img() {
 }
 
 
-//Function for the drop down menu
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-//   }
-  
-//   // Close the dropdown if the user clicks outside of it
-//   window.onclick = function(event) {
-//     if (!event.target.matches('.dropbtn')) {
-//       var dropdowns = document.getElementsByClassName("dropdown-content");
-//       var i;
-//       for (i = 0; i < dropdowns.length; i++) {
-//         var openDropdown = dropdowns[i];
-//         if (openDropdown.classList.contains('show')) {
-//           openDropdown.classList.remove('show');
-//         }
-//       }
-//     }
-//   }
-
 //counter for the products
 const display = document.getElementById("display");
 
@@ -72,7 +59,7 @@ function counter_minus() {
     }
 }
 
-
+//Signup functions
 const forms = document.querySelector(".forms"),
       pwShowHide = document.querySelectorAll(".eye-icon"),
       links = document.querySelectorAll(".link");
@@ -96,7 +83,7 @@ pwShowHide.forEach(eyeIcon => {
 
 links.forEach(link => {
     link.addEventListener("click", e => {
-       e.preventDefault(); //preventing form submit
+       
        forms.classList.toggle("show-signup");
     })
 })

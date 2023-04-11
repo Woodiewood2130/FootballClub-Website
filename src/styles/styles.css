@@ -85,6 +85,14 @@ main {
     float: right;
 }
 
+.nav-right #signup_hide {
+    display: block;
+}
+
+.nav-right #logout_hide {
+    display: none;
+}
+
 .show {
     display: block;
 }
@@ -755,6 +763,7 @@ footer a{
     margin: 15px;
     margin-right: 5px;
     min-width: 0;
+    overflow: auto;
 }
 
 #personal_info img {
@@ -831,8 +840,8 @@ footer a{
     align-items: center;
     width: 23.5vw;
     height: 40vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
     margin: 5px;
     border-radius: 3px;
     border: 1px solid white;
@@ -940,7 +949,8 @@ footer a{
     border-radius: 3px;
     /* margin: 10px; */
     /* margin-left: 5px; */
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
+    overflow: auto;
     color: rgb(41, 57, 81);
 
 }
