@@ -56,7 +56,10 @@ function counter_add() {
 function counter_minus() {
     document.getElementById("minus");
     const number = display.innerText;
-    display.innerText = parseInt(number, 10) - 1;  
+    display.innerText = parseInt(number, 10) - 1;
+    if (display.innerText < 0 ) {
+        display.innerText = 0;
+    }
 }
 
 
