@@ -1,29 +1,39 @@
-// function openForm() {
-//   document.getElementById("loginform").style.display = "block";
-// }
-
-// function closeForm() {
-//   document.getElementById("loginform").style.display = "none";
-// }
 
 //Fucntion for the login popup.
 function openForm() {
     document.getElementById("loginform").classList.toggle("show");
-  }
+}
 
-//Function for the login  
-// window.onclick = function(event) {
-//     if (!event.target.matches('.open-button')) {
-//       var dropdowns = document.getElementsByClassName(".form-popup");
-//       var i;
-//       for (i = 0; i < dropdowns.length; i++) {
-//         var openDropdown = dropdowns[i];
-//         if (openDropdown.classList.contains('show')) {
-//           openDropdown.classList.remove('show');
-//         }
-//       }
-//     }
-//   }
+function renderTicket() {
+    var selected = document.getElementById("ticket_group");
+    var imgUrl = "";
+    if (selected.value == 'vip') {
+        imgUrl = "https://static.vecteezy.com/system/resources/previews/013/319/823/original/golden-yellow-vip-ticket-illustration-vector.jpg";
+    } 
+    else if (selected.value == 'gold') {
+        imgUrl = "https://img.freepik.com/premium-vector/golden-ticket-design-vip-invitation-vector-illustration_527912-22.jpg?w=2000";
+    } 
+    else if (selected.value == 'silv') {
+        imgUrl = "https://www.shutterstock.com/image-vector/silver-ticket-vector-illustration-websites-260nw-2216357835.jpg";
+    } 
+    else if (selected.value == 'brnz') {
+        imgUrl = "https://www.citizenadvocacycenter.org/uploads/8/8/4/0/8840743/s986954959238854464_p10_i8_w500.png";
+    } 
+    else if (selected.value == 'default'){
+        imgUrl = "https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg";
+    }
+
+    document.getElementById("ticket_img").src = imgUrl;
+}
+
+function reset_img() {
+    var reset = document.getElementById("rest");
+    var restimg = "https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg";
+    if (reset.value == 'Reset') {
+        document.getElementById("ticket_img").src = restimg;
+    }
+}
+
 
 //Function for the drop down menu
 // function myFunction() {

@@ -31,7 +31,30 @@
     <body>
         <main>
             <section id="tickets">
-                
+                <div class="ticket_container">
+                    <div class="ticket_container1">
+                        <h1>Ticket Buy</h1>
+                        <p> To buy Ticket select an option below</p>
+                        <form>
+                            <select id ="ticket_group" name="ticket" onchange="renderTicket()">
+                                <option value="default" selected="selected"> None </option>
+                                <option value="vip"> VIP </option>
+                                <option value="gold"> GOLD </option>
+                                <option value="silv"> SILVER </option>
+                                <option value="brnz"> BRONZE </option>        
+                            </select>
+                            <br><br>
+
+                            <input type="reset" value="Reset" id="rest" onclick="reset_img()">
+                        </form>
+                            <div class="ticket_buy">
+                               <a href="payment.html"><button class="btn cart-btn">Buy Now</button></a>
+                            </div>
+                    </div>
+                    <div class="ticket_container2">
+                        <img id="ticket_img" src="https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg" width="333px" height="200px">
+                    </div>
+                </div>
             </section>
             
 
