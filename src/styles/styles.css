@@ -341,7 +341,7 @@ main {
     height: 30vh;
     margin: 5px; 
     /* overflow: auto; */
-    animation: players1 30s linear infinite;
+    animation: players1 35s linear infinite;
     /* background-color: white; */ 
 }
 
@@ -687,6 +687,11 @@ footer a{
     left: 66%;
 }
 
+.coach {
+    top: 3px;
+    left: 1.1%;
+}
+
 
 /*Players page css end */
 
@@ -696,7 +701,7 @@ footer a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 87vh;
+    height: 86.5vh;
     width: 100%;
     /* background-color:  rgb(45, 152, 209); */
     border: 1px solid white;
@@ -730,6 +735,10 @@ footer a{
     margin: 15px;
     margin-right: 5px;
     min-width: 0;
+}
+
+#personal_info img {
+    margin-bottom: 20px;
 }
 
 #personal_info p{
@@ -826,7 +835,7 @@ footer a{
 
 .shop_container1 a:hover {
     color: whitesmoke;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .shop_container1 ul{
