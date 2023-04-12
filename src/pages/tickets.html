@@ -36,7 +36,7 @@
                         <h1>Ticket Buy</h1>
                         <p> To buy Ticket select an option below</p>
                         <form>
-                            <select id ="ticket_group" name="ticket" onchange="renderTicket()">
+                            <select id ="ticket_group" name="ticket"  onchange="renderTicket(), tickt()">
                                 <option value="default"> None </option>
                                 <option value="vip"> VIP - 20BD </option>
                                 <option value="gold"> GOLD - 10BD </option>
@@ -48,13 +48,17 @@
                             <input type="reset" value="Reset" id="rest" onclick="reset_img()">
                         </form>
                             <div id="ticket_buy">
-                               <a href="payment_ticket.html"><button class="btn cart-btn" onclick="pay_ticket()">Buy Now</button></a>
+                               <a href="payment_ticket.html"><button class="btn cart-btn">Buy Now</button></a>
                             </div>
                     </div>
                     <div class="ticket_container2">
                         <img id="ticket_img" src="https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg" width="333px" height="200px">
+                        <!-- <p id="tkts">
+                            Ticket
+                        </p> -->
                     </div>
                 </div>
+                <!-- how do you open a live  server?-->
             </section>
             
 
