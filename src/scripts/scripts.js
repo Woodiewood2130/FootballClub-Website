@@ -4,24 +4,61 @@ function openForm() {
     document.getElementById("loginform").classList.toggle("show");
 }
 
-function pay_ticket() {
-    // var e = document.getElementById("tkts");
-    // var value = e.options[e.selectedIndex].value;
+
+function tickt() {
     var selected = document.getElementById("ticket_group");
-    document.getElementById('tkts').innerHTML = "VIP";
     if (selected.value == 'vip') {
-        document.getElementById("tkts").innerHTML = "VIP";
-    }
+        localStorage.setItem("ticket_group", "VIP");
+  
+    } 
     else if (selected.value == 'gold') {
-        document.getElementById("tkts").innerHTML = "GOLD";
+        localStorage.setItem("ticket_group", 'GOLD');
     } 
     else if (selected.value == 'silv') {
-        document.getElementById("tkts").innerHTML = "Silver";
+        localStorage.setItem("ticket_group", 'SILVER');
     } 
     else if (selected.value == 'brnz') {
-        document.getElementById("tkts").innerHTML = "Bronze";
+        localStorage.setItem("ticket_group", 'BRONZE');
     } 
+    else if (selected.value == 'default'){
+        localStorage.setItem("ticket_group", 'default');
+    }
 }
+
+function chk_ticket() {
+    let x = localStorage.getItem("ticket_group");
+    document.getElementById('tkts').innerHTML = x;
+}
+
+function confirmation() {
+    if (confirm("Confirm Purchase")) {
+        alert('Purchased');
+    } else {
+        alert('Purchase Cancelled');
+    }
+}
+
+
+
+// function tickt() {
+//     var selected = document.getElementById("ticket_group");
+//     if (selected.value == 'vip') {
+//         return document.getElementById("tkts").innerHTML = "VIP";
+//     } 
+//     else if (selected.value == 'gold') {
+//         return document.getElementById("tkts").innerHTML = "GOLD";
+//     } 
+//     else if (selected.value == 'silv') {
+//         return document.getElementById("tkts").innerHTML = "Silver";
+//     } 
+//     else if (selected.value == 'brnz') {
+//         return document.getElementById("tkts").innerHTML = "Bronze";
+//     } 
+//     else if (selected.value == 'default'){
+//         return document.getElementById("tkts").innerHTML = "None";
+//     }
+// }
+
 
 
 
