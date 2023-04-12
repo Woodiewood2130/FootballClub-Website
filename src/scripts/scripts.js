@@ -4,6 +4,27 @@ function openForm() {
     document.getElementById("loginform").classList.toggle("show");
 }
 
+function pay_ticket() {
+    // var e = document.getElementById("tkts");
+    // var value = e.options[e.selectedIndex].value;
+    var selected = document.getElementById("ticket_group");
+    document.getElementById('tkts').innerHTML = "VIP";
+    if (selected.value == 'vip') {
+        document.getElementById("tkts").innerHTML = "VIP";
+    }
+    else if (selected.value == 'gold') {
+        document.getElementById("tkts").innerHTML = "GOLD";
+    } 
+    else if (selected.value == 'silv') {
+        document.getElementById("tkts").innerHTML = "Silver";
+    } 
+    else if (selected.value == 'brnz') {
+        document.getElementById("tkts").innerHTML = "Bronze";
+    } 
+}
+
+
+
 function login_redirect() {
 
 }
