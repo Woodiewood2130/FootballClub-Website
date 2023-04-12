@@ -37,18 +37,18 @@
                         <p> To buy Ticket select an option below</p>
                         <form>
                             <select id ="ticket_group" name="ticket" onchange="renderTicket()">
-                                <option value="default" selected="selected"> None </option>
-                                <option value="vip"> VIP </option>
-                                <option value="gold"> GOLD </option>
-                                <option value="silv"> SILVER </option>
-                                <option value="brnz"> BRONZE </option>        
+                                <option value="default"> None </option>
+                                <option value="vip"> VIP - 20BD </option>
+                                <option value="gold"> GOLD - 10BD </option>
+                                <option value="silv"> SILVER - 5BD </option>
+                                <option value="brnz"> BRONZE - 2BD </option>        
                             </select>
                             <br><br>
-
+                            
                             <input type="reset" value="Reset" id="rest" onclick="reset_img()">
                         </form>
-                            <div class="ticket_buy">
-                               <a href="payment.html"><button class="btn cart-btn">Buy Now</button></a>
+                            <div id="ticket_buy">
+                               <a href="payment_ticket.html"><button class="btn cart-btn" onclick="pay_ticket()">Buy Now</button></a>
                             </div>
                     </div>
                     <div class="ticket_container2">
