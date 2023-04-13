@@ -1367,6 +1367,10 @@ footer a{
     padding: 5px;
     font-size: 17px;
 }
+.counter_flex #display p {
+    margin: 0;
+    font-size: 17px;
+}
   
 .counter_flex button {
     min-width: 25px;

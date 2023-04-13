@@ -37,9 +37,7 @@
                         <img src="../../images/product_img/tshirt_home.png" height="300" width="300">
                     </div>
                     <div class="flex_product_2">
-                        <p>
-                            SSC Napoli Home Match Shirt 2022/2023
-                        </p>
+                        <p id="shop_item"> SSC Napoli Home Match Shirt 2022/2023 </p>
                         <div class="flex_product_3">
                             <p> <s> $125 </s> <br><br> $100 </p>
                             <p> 
@@ -51,13 +49,15 @@
                             <div class='counter_flex'>
                                 <div class='control'>
                                     <button onclick="counter_add()" id='plus'>+</button>
-                                    <div id='display'>0</div>
+                                    <div id='display'>
+                                        <p>0</p>
+                                    </div>
                                     <button onclick="counter_minus()" id='minus'>-</button>
                                 </div>
                             </div>
                         </div>
                         <div class="flex_product_5">
-                            <a href="../payment.html"><button class="btn cart-btn">Buy Now</button></a>
+                            <a href="../payment.html"><button class="btn cart-btn" onclick="getshop()">Buy Now</button></a>
                         </div>
                     </div>
                 </div>   
