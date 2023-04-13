@@ -22,7 +22,6 @@ function login_redirect () {
 }
 
 
-
 //Fucntion for the login popup.
 function openForm() {
     document.getElementById("loginform").classList.toggle("show");
@@ -63,6 +62,7 @@ function reset_img() {
 
 function tickt() {
     var selected = document.getElementById("ticket_group");
+    localStorage.setItem("ticket_group", 'No Ticket Selected');
     if (selected.value == 'vip') {
         localStorage.setItem("ticket_group", "VIP");
     } 
@@ -95,6 +95,35 @@ function confirmation() {
         alert('Purchase Cancelled');
     }
 }
+
+//function to transfer the data from shop page to payment page
+function getshop() {
+    var item = document.getElementById("shop_item").textContent;
+    localStorage.setItem("shop_item", item);
+    
+    var count = document.getElementById('display').textContent;
+    localStorage.setItem("display", count);
+    if (count != 0) {
+        localStorage.setItem("shop_item", item);
+    }
+    else {
+        localStorage.setItem("display", 'No Quantity Selected ');
+    }
+    // alert('Display value is ' + count + '\nItem is ' + item);
+}
+
+function product() {
+    let prod = localStorage.getItem("shop_item");
+    document.getElementById('prdt').innerHTML = prod;
+    let quant = localStorage.getItem("display");
+    document.getElementById('qty').innerHTML = quant;
+}
+
+
+
+
+
+
 
 // function tickt() {
 //     var selected = document.getElementById("ticket_group");
