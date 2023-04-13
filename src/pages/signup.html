@@ -26,14 +26,14 @@
                 <div class="nav-right">
                     <a class="open-button" onclick="openForm()">Login</a>
                     <div class="form-popup" id="loginform">
-                        <form action="" class="form-container" method="post">
+                        <form action="../../index.html" class="form-container" method="post">
                             <header>Login</header>
                             <input type="email" placeholder="Email" class="input" required>
                             <input type="password" placeholder="Password" class="password" required>
                             <div id="form-link">
                                 <!-- <a href="#" class="forgot-pass">Forgot password?</a> -->
                             </div>
-                            <button type="submit" class="btn">Login</button>
+                            <button type="submit" class="btn" onclick="login()">Login</button>
                             <div id="form-link">
                                 <span>Don't have an account? </span> <a href="signup.html" onclick="window.location.href = 'signup.html';" class="link signup-link">Signup</a>
                             </div>
@@ -55,7 +55,7 @@
                     <div class="form signup" >
                         <div class="form-content">
                             <header>Signup</header>
-                            <form action="#">
+                            <form action="../../index.html">
                                 <div class="field input-field">
                                     <input type="email" placeholder="Email" class="input" required>
                                 </div>
@@ -69,7 +69,7 @@
                                 </div>
         
                                 <div class="field button-field">
-                                    <button>Signup</button>
+                                    <button onclick="login()">Signup</button>
                                 </div>
                             </form>
         
