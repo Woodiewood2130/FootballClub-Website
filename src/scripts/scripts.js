@@ -1,7 +1,63 @@
+//user login/logout functions
+function login_status() {
+    var loggedIn = localStorage.getItem('loggedIn');
+    if (loggedIn === 'true') {
+        document.getElementById('nav-right').innerHTML = '<a href="" onclick="logout()">Logout</a>';
+    }
+}
+
+function logout() {
+    localStorage.setItem('loggedIn', 'false');
+    document.getElementById('nav-right').innerHTML = '<a href="src/pages/signup.html">Sign Up</a>';
+    window.location.href = 'index.html';
+}
+
+function login() {
+    localStorage.setItem('loggedIn', 'true');
+    window.location.href = '../../index.html';
+}
+
+function login_redirect () {
+    login_status();
+}
+
+
 
 //Fucntion for the login popup.
 function openForm() {
     document.getElementById("loginform").classList.toggle("show");
+}
+
+//Funtion for the ticket to get the image and such
+function renderTicket() {
+    var selected = document.getElementById("ticket_group");
+    var imgUrl = "";
+    if (selected.value == 'vip') {
+        imgUrl = "https://static.vecteezy.com/system/resources/previews/013/319/823/original/golden-yellow-vip-ticket-illustration-vector.jpg";
+    } 
+    else if (selected.value == 'gold') {
+        imgUrl = "https://img.freepik.com/premium-vector/golden-ticket-design-vip-invitation-vector-illustration_527912-22.jpg?w=2000";
+    } 
+    else if (selected.value == 'silv') {
+        imgUrl = "https://www.shutterstock.com/image-vector/silver-ticket-vector-illustration-websites-260nw-2216357835.jpg";
+    } 
+    else if (selected.value == 'brnz') {
+        imgUrl = "https://www.citizenadvocacycenter.org/uploads/8/8/4/0/8840743/s986954959238854464_p10_i8_w500.png";
+    } 
+    else if (selected.value == 'default'){
+        imgUrl = "https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg";
+    }
+
+    document.getElementById("ticket_img").src = imgUrl;
+}
+
+//function for resetting the image of the ticket
+function reset_img() {
+    var reset = document.getElementById("rest");
+    var restimg = "https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg";
+    if (reset.value == 'Reset') {
+        document.getElementById("ticket_img").src = restimg;
+    }
 }
 
 
@@ -9,7 +65,6 @@ function tickt() {
     var selected = document.getElementById("ticket_group");
     if (selected.value == 'vip') {
         localStorage.setItem("ticket_group", "VIP");
-  
     } 
     else if (selected.value == 'gold') {
         localStorage.setItem("ticket_group", 'GOLD');
@@ -21,7 +76,10 @@ function tickt() {
         localStorage.setItem("ticket_group", 'BRONZE');
     } 
     else if (selected.value == 'default'){
-        localStorage.setItem("ticket_group", 'default');
+        localStorage.setItem("ticket_group", 'No Ticket Selected');
+    }
+    else {
+        localStorage.setItem("ticket_group", 'No Ticket Selected');
     }
 }
 
@@ -56,60 +114,6 @@ function confirmation() {
 //         return document.getElementById("tkts").innerHTML = "None";
 //     }
 // }
-
-function login_status() {
-    var loggedIn = localStorage.getItem('loggedIn');
-    if (loggedIn === 'true') {
-        document.getElementById('nav-right').innerHTML = '<a href="" onclick="logout()">Logout</a>';
-    }
-}
-
-function logout() {
-    localStorage.setItem('loggedIn', 'false');
-    document.getElementById('nav-right').innerHTML = '<a href="src/pages/signup.html">Sign Up</a>';
-    window.location.href = 'index.html';
-}
-
-function login() {
-    localStorage.setItem('loggedIn', 'true');
-    window.location.href = '../../index.html';
-}
-
-function login_redirect () {
-    login_status();
-}
-
-
-//Funtion for the ticket
-function renderTicket() {
-    var selected = document.getElementById("ticket_group");
-    var imgUrl = "";
-    if (selected.value == 'vip') {
-        imgUrl = "https://static.vecteezy.com/system/resources/previews/013/319/823/original/golden-yellow-vip-ticket-illustration-vector.jpg";
-    } 
-    else if (selected.value == 'gold') {
-        imgUrl = "https://img.freepik.com/premium-vector/golden-ticket-design-vip-invitation-vector-illustration_527912-22.jpg?w=2000";
-    } 
-    else if (selected.value == 'silv') {
-        imgUrl = "https://www.shutterstock.com/image-vector/silver-ticket-vector-illustration-websites-260nw-2216357835.jpg";
-    } 
-    else if (selected.value == 'brnz') {
-        imgUrl = "https://www.citizenadvocacycenter.org/uploads/8/8/4/0/8840743/s986954959238854464_p10_i8_w500.png";
-    } 
-    else if (selected.value == 'default'){
-        imgUrl = "https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg";
-    }
-
-    document.getElementById("ticket_img").src = imgUrl;
-}
-
-function reset_img() {
-    var reset = document.getElementById("rest");
-    var restimg = "https://static.vecteezy.com/system/resources/previews/004/141/669/original/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg";
-    if (reset.value == 'Reset') {
-        document.getElementById("ticket_img").src = restimg;
-    }
-}
 
 
 //counter for the products

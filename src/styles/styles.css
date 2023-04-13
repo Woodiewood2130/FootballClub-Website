@@ -504,7 +504,7 @@ main {
     align-items: center;
     align-content: center;
     width: 69vw;
-    height: 28rem;
+    height: 27rem;
     margin: 0 auto;
     overflow: hidden;
     /* flex-shrink: 0; */
@@ -528,6 +528,11 @@ main {
     text-align: center;
     color: rgb(41, 57, 81);
     /* flex-shrink: 0; */
+}
+
+.item_shop img {
+    width: auto;
+    /* height: 30vh; */
 }
 
 .item_shop a {
@@ -970,6 +975,39 @@ footer a{
 }
 
 .payment1 a:hover {
+    color: whitesmoke;
+    /* text-align: left; */
+}
+
+.payment_sh {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 82vh;
+    background-image:linear-gradient(to top,  rgb(41, 57, 81),rgb(45, 152, 209));
+    /* background-color: lightgray; */
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid rgb(41, 57, 81);
+    margin-right: 10px;
+    border-radius: 3px;
+    /* margin: 10px; */
+    /* margin-left: 5px; */
+    /* overflow-y: hidden; */
+    overflow: auto;
+    color: white;
+}
+
+.payment_sh a{
+    list-style-type: circle;
+    text-decoration: none;
+    color: rgb(41, 57, 81);
+    width: 60%;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.payment_sh a:hover {
     color: whitesmoke;
     /* text-align: left; */
 }

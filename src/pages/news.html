@@ -383,7 +383,6 @@
                 const links = document.querySelectorAll('a');
                 links.forEach(link => {
                     link.addEventListener('click', e => {
-                        // e.preventDefault(); 
                         const articleId = link.getAttribute('href'); 
                         const article = document.querySelector(articleId);
                         const articles = document.querySelectorAll('.article');
@@ -395,12 +394,11 @@
                 });
 
                 const navbarLinks = document.querySelectorAll('.navbar a');
-                // Loop through each link and add an event listener
                 navbarLinks.forEach(link => {
                 link.addEventListener('click', function(e) {
                     
-                    const address = this.getAttribute('href'); // get the address from the link's href attribute
-                    window.location.href = address; // redirect to the address
+                    const address = this.getAttribute('href'); 
+                    window.location.href = address;
                 });
 });
             </script>
