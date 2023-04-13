@@ -1426,7 +1426,6 @@ footer a{
 }
 
 #news_flex2 h1{
-    text-overflow: ;
     text-overflow: clip;
     text-decoration: underline;
 }
