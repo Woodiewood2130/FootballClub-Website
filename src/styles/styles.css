@@ -165,7 +165,7 @@ main {
     align-items: center;
     width: 98%;
     height: 80%;
-    background-color: white;
+    background-color: rgb(45, 152, 209);
     border: 1px solid rgb(41, 57, 81);
     border-radius: 3px;
     margin-bottom: 10px;
@@ -1361,9 +1361,10 @@ footer a{
     height: 82vh;
     /* background-color: lightgray; */
     justify-content: flex-start;
+    align-items: center;
     margin-right: 10px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
     border-radius: 3px;
     border: 1px solid white;
     background-image:linear-gradient(to top,  rgb(209, 216, 220),rgb(45, 152, 209));
@@ -1373,6 +1374,30 @@ footer a{
 
 #news_flex1 h3 {
     color: rgb(41, 57, 81);
+}
+
+#news_flex1 a{
+    list-style-type: circle;
+    text-decoration: none;
+    color: rgb(41, 57, 81);
+    width: 100%;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+#news_flex1 a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+    /* text-align: left; */
+}
+
+#news_flex1 li {
+    font-size: 15px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: 5px;
+    /* width: 12.6vw; */
+    /* text-align:center; */
 }
 
 #news_flex2 {
@@ -1390,6 +1415,32 @@ footer a{
     /* overflow-x: hidden; */
     text-align: center;
     color: whitesmoke;
+}
+
+#news_flex2 .article {
+    display: none;
+}
+
+#news_flex2 .active {
+    display: block;
+}
+
+#news_flex2 h1{
+    text-overflow: ;
+    text-overflow: clip;
+    text-decoration: underline;
+}
+
+#news_flex2 img {
+    margin-right: 20px;
+    /* margin-left: 5px; */
+    width:max-content;
+    margin-bottom: 10px;
+}
+
+#news_flex2 p {
+    text-align: justify;
+    margin: 20px;
 }
 
 #news_flex3 {
