@@ -366,11 +366,11 @@
                                 <br>
                                 <li> Upcoming Highlights of Champions League First leg Now Playing on YouTube </li>
                                 <br>
-                                <li> UEFA Champions League <a href="src/pages/tickets.html">tickets</a> are out now!! Buy
+                                <li> UEFA Champions League <a href="../pages/tickets.html">tickets</a> are out now!! Buy
                                     before they're sold out.</li>
                                 <br>
                                 <li> UEFA Champions League exclusive Merchandise is available in the Club Store. Visit our
-                                    <a href="src/pages/shop.html">inventory</a> to buy now.
+                                    <a href="../pages/shop.html">inventory</a> to buy now.
                                 </li>
                                 <br>
                             </div>
@@ -383,7 +383,7 @@
                 const links = document.querySelectorAll('a');
                 links.forEach(link => {
                     link.addEventListener('click', e => {
-                        e.preventDefault(); 
+                        // e.preventDefault(); 
                         const articleId = link.getAttribute('href'); 
                         const article = document.querySelector(articleId);
                         const articles = document.querySelectorAll('.article');
@@ -393,6 +393,16 @@
                         article.classList.add('active'); 
                     });
                 });
+
+                const navbarLinks = document.querySelectorAll('.navbar a');
+                // Loop through each link and add an event listener
+                navbarLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    
+                    const address = this.getAttribute('href'); // get the address from the link's href attribute
+                    window.location.href = address; // redirect to the address
+                });
+});
             </script>
             <script src="../scripts/scripts.js"></script>
         </main>
