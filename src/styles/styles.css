@@ -90,6 +90,10 @@ main {
     display: block;
 } */
 
+#nav-right {
+    float: right;
+}
+
 .show {
     display: block;
 }
@@ -156,17 +160,29 @@ main {
 
 #flex_container_match{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center; 
     align-items: center;
     width: 98%;
-    height: 65%;
-    background-color: rgb(27, 140, 201);
+    height: 80%;
+    background-color: white;
     border: 1px solid rgb(41, 57, 81);
     border-radius: 3px;
     margin-bottom: 10px;
 }
 
+.match_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+ 
+  .fix_logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 20px;
+  }
 
 /* #head img {
     height: 100%;
