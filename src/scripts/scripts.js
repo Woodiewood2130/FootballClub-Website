@@ -38,8 +38,6 @@ function confirmation() {
     }
 }
 
-
-
 // function tickt() {
 //     var selected = document.getElementById("ticket_group");
 //     if (selected.value == 'vip') {
@@ -59,11 +57,26 @@ function confirmation() {
 //     }
 // }
 
+function login_status() {
+    var loggedIn = localStorage.getItem('loggedIn');
+    if (loggedIn === 'true') {
+        document.getElementById('nav-right').innerHTML = '<a href="" onclick="logout()">Logout</a>';
+    }
+}
 
+function logout() {
+    localStorage.setItem('loggedIn', 'false');
+    document.getElementById('nav-right').innerHTML = '<a href="src/pages/signup.html">Sign Up</a>';
+    window.location.href = 'index.html';
+}
 
+function login() {
+    localStorage.setItem('loggedIn', 'true');
+    window.location.href = '../../index.html';
+}
 
-function login_redirect() {
-
+function login_redirect () {
+    login_status();
 }
 
 
