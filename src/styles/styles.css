@@ -164,7 +164,7 @@ main {
     justify-content: center; 
     align-items: center;
     width: 98%;
-    height: 80%;
+    height: 90%;
     background-color: rgb(45, 152, 209);
     border: 1px solid rgb(41, 57, 81);
     border-radius: 3px;
@@ -214,7 +214,6 @@ main {
     border: 2px solid rgb(41, 57, 81);
     padding: 10px;
     margin: 10px;
-    overflow-y: scroll;
     width: 85%;
     /* height: 30vh; */
     height: 100%;
@@ -560,23 +559,112 @@ main {
     width: 99.8%;
     height: 40vh;
     flex-direction: column;
-    background-image:linear-gradient(to bottom,  rgb(209, 216, 220),rgb(45, 152, 209));
+    /* background-image:linear-gradient(to bottom,  rgb(209, 216, 220),rgb(45, 152, 209)); */
     justify-content: center;
     align-items: center;
     margin-bottom: 3px;
     opacity: 0.98;
     border-radius: 3px;
     border: 1px solid white;
-    min-height: 40vh;
+    min-height: 45vh;
     margin-bottom: 9px;
 }
 
 #home_about_us h1{
-    color: rgb(41, 57, 81);
+    color: white;
     margin: 20px;
     /* margin-top: 10px; */
     /* margin-bottom: -30px; */
 }
+
+#home_about_us .about_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    width: 78%;
+    height: 90%;
+    background-image:linear-gradient(to bottom,  rgb(209, 216, 220),rgb(45, 152, 209));
+    /* background-color: rgb(45, 152, 209); */
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+#home_about_us .about-us {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px;
+    overflow-y: auto;
+    width: 45%;
+    /* height: 30vh; */
+    height: 85%;
+    background-color: rgb(41, 57, 81);
+    border-radius: 5px;
+}
+
+#home_about_us .about-us  h2{
+    text-align: center;
+    color:white;
+}
+
+#home_about_us .about-us  p{
+    text-align: justify;
+    color:white;
+    margin: 10px;
+
+}
+
+#home_about_us .contact {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px;
+    overflow-y: auto;
+    width: 25%;
+    /* height: 30vh; */
+    height: 85%;
+    background-color: rgb(41, 57, 81);
+    border-radius: 5px;
+}
+
+#home_about_us .contact h2 {
+    color:white;
+}
+
+#home_about_us .contact .contact_head {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#home_about_us .contact .icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 80%;
+    /* background-color: gray; */
+}
+
+#home_about_us .contact .icons li {
+    list-style-type:none;
+    margin: 10px;
+}
+
+
+#home_about_us .bx {
+    font-size: 30px;
+    color: white;
+  }
 
 footer {
     display: flex;
