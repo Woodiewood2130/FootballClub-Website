@@ -28,10 +28,110 @@
             </div>
         </nav>
     </head>
-    <body onload="login_redirect()">
+    <body onload="product(), login_redirect()">
         <main>
-            <section id="payment_pl">
-               
+            <section id="payment">
+                <div class="payment_sh">
+                    <h1> Payment Details </h1>
+                    <table class="personal">
+                        <form>
+                            <tr>
+                                <th>
+                                    Full Name:
+                                </th>
+                                <td>
+                                    <input type="text" name="name" required ="required" placeholder=" Enter Name" autofocus="autofocus" size = "30" maxlength="30" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Telephone:
+                                </th>
+                                <td>
+                                    <input type="tel" name="Telephone" placeholder=" Enter Telephone No." size = "30" maxlength="8" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Email:
+                                </th>
+                                <td>
+                                    <input type="email" name="Email" required ="required" placeholder=" Enter Email" size = "30" maxlength="30" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Gender:
+                                </th>
+                                <td>
+                                    <input type="radio" id="sex_m" name="sex" value="male" checked="checked"> Male
+                                    <input type="radio" id="sex_f" name="sex" value="female"> Female
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Date of Birth:
+                                </th>
+                                <td>
+                                    <!-- <input type="radio" id="adult" name="adult"  checked="checked"> Adult
+                                    <input type="radio" id="children" name="child" > Child -->
+                                    <input type="date" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Input Credit Card Number
+                                </th>
+                                <td>
+                                    <input type="tel" name="credit_crd" placeholder=" Enter Credit Card Number" size = "30" maxlength="16" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Enter Expiry Date
+                                </th>
+                                <td>
+                                    <input type="date" name="credit_crd_dt" placeholder=" Enter Card Expiry Date" size = "30" maxlength="30" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Enter CVV
+                                </th>
+                                <td>
+                                    <input type="tel" name="credit_crd_dt" placeholder=" Enter Card CVV" size = "30" maxlength="3" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Product
+                                </th>
+                                <td>
+                                    <div id="prdt">
+                                        <p>No product selected</p> 
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Quantity
+                                </th>
+                                <td>
+                                    <div id="qty">
+                                        <p> No Quantity Selected</p> 
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <input type="reset" value="Reset">
+                                    <input type="submit" value="Buy" onclick="confirmation()">
+                                </th>
+                            </tr>
+        
+                        </form>
+                    </table>
+                </div>
             </section>
             
 
